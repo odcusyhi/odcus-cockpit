@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ODCUS Cockpit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;800&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #1D1D1B;
+    --surface: #241C2B;
+    --surface2: #2d2337;
+    --border: #5a4070;
+    --accent: #7430F7;
+    --accent2: #7611F7;
+    --green: #61D2CE;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --blue: #2979FF;
+    --pink: #B57BE8;
+    --text: #FFFFFF;
+    --text2: #cbb8e0;
+    --text3: #8a6aaa;
+  }
+  body { background: var(--bg); color: var(--text); font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; min-height: 100vh; }
+  .logo, h1, h2, h3, h4, h5, h6, .tab, .card-name, .workflow-card-title, .memory-title, .step-name, .map-layer-title { font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .card-name, .workflow-card-title, .memory-title, h2, h3, .stat-num, .logo { color: #FFFFFF; }
+  .step-name { color: #61D2CE; }
+  .card-id { color: var(--text3); }
+
+  .app { display: flex; flex-direction: column; height: 100vh; }
+  header { padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; background: var(--surface); flex-shrink: 0; }
+  .logo { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; }
+  .logo span { color: var(--accent); }
+  .subtitle { color: var(--text2); font-size: 12px; }
+  .stats-bar { display: flex; gap: 24px; margin-left: auto; }
+  .stat { text-align: right; }
+  .stat-num { font-size: 20px; font-weight: 700; color: var(--text); }
+  .stat-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  nav { display: flex; gap: 2px; padding: 0 24px; border-bottom: 1px solid var(--border); background: var(--surface); flex-shrink: 0; overflow-x: auto; }
+  .tab { padding: 10px 16px; cursor: pointer; color: var(--text2); border-bottom: 2px solid transparent; font-size: 13px; font-weight: 500; transition: all 0.15s; white-space: nowrap; }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .main { flex: 1; overflow: hidden; display: flex; }
+  .panel { display: none; flex: 1; overflow: hidden; }
+  .panel.active { display: flex; }
+
+  .toolbar { padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; gap: 12px; align-items: center; flex-shrink: 0; background: var(--surface); }
+  input[type=search] { background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 14px; border-radius: 24px; font-size: 13px; width: 260px; outline: none; }
+  input[type=search]::placeholder { color: var(--text3); }
+  input[type=search]:focus { border-color: var(--accent); }
+  .filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; cursor: pointer; border: 1px solid var(--border); color: var(--text2); background: transparent; transition: all 0.15s; white-space: nowrap; }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .content { flex: 1; overflow-y: auto; padding: 20px 24px; }
+  .content::-webkit-scrollbar { width: 6px; }
+  .content::-webkit-scrollbar-track { background: transparent; }
+  .content::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; transition: border-color 0.15s, transform 0.1s; cursor: default; }
+  .card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .card-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
+  .card-icon { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+  .card-name { font-weight: 600; font-size: 13px; }
+  .card-id { font-size: 11px; color: var(--text3); font-family: monospace; margin-top: 1px; }
+  .card-desc { color: var(--text2); font-size: 12px; line-height: 1.5; }
+  .card-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 10px; }
+  .tag { padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 500; }
+
+  /* Capability cards */
+  .cap-powered { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 10px; align-items: center; }
+  .cap-powered-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-right: 2px; flex-shrink: 0; }
+  .cap-tag { padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 500; background: var(--surface2); border: 1px solid var(--border); color: var(--text2); }
+  .status-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 600; }
+  .status-active { background: #200a35; color: #B57BE8; border: 1px solid #3d1a70; }
+  .status-automated { background: #1a1040; color: #8719E1; border: 1px solid #3a1a6a; }
+  .card-status-row { display: flex; gap: 6px; margin-bottom: 8px; }
+
+  /* Workflow cards */
+  .workflow-list { display: flex; flex-direction: column; gap: 20px; }
+  .workflow-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+  .workflow-card:hover { border-color: var(--accent); }
+  .workflow-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+  .workflow-card-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .workflow-card-title { font-size: 15px; font-weight: 600; }
+  .workflow-trigger { font-size: 12px; color: var(--text3); margin-bottom: 16px; margin-top: 2px; }
+  .workflow-trigger span { color: var(--accent); font-weight: 500; }
+  .workflow-desc { font-size: 13px; color: var(--text2); margin-bottom: 16px; }
+
+  /* Workflow steps */
+  .workflow { display: flex; gap: 0; margin-bottom: 0; overflow-x: auto; }
+  .workflow-step { flex: 1; min-width: 100px; padding: 14px; background: var(--surface2); border: 1px solid var(--border); position: relative; }
+  .workflow-step:first-child { border-radius: 8px 0 0 8px; }
+  .workflow-step:last-child { border-radius: 0 8px 8px 0; }
+  .workflow-step:not(:last-child)::after { content: '→'; position: absolute; right: -12px; top: 50%; transform: translateY(-50%); color: var(--text3); z-index: 1; font-size: 16px; }
+  .step-num { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+  .step-name { font-weight: 600; color: var(--accent); margin-bottom: 4px; font-size: 12px; }
+  .step-desc { font-size: 11px; color: var(--text2); }
+
+  /* Category colors — ODCUS brand palette */
+  .cat-engineering { background: #1e1530; color: #B57BE8; }
+  .cat-product { background: #200a35; color: #8719E1; }
+  .cat-business { background: #1a2730; color: #61D2CE; }
+  .cat-marketing { background: #280a40; color: #B57BE8; }
+  .cat-seo { background: #250835; color: #7430F7; }
+  .cat-sales { background: #1a2730; color: #61D2CE; }
+  .cat-finance { background: #1a2a28; color: #61D2CE; }
+  .cat-infrastructure { background: #1e1530; color: #8719E1; }
+  .cat-security { background: #2a1020; color: #ef4444; }
+  .cat-docs { background: #1a1a38; color: #B57BE8; }
+  .cat-automation { background: #200a35; color: #8719E1; }
+  .cat-operations { background: #1a2730; color: #61D2CE; }
+  .cat-research { background: #201528; color: #B57BE8; }
+  .cat-social { background: #280a40; color: #8719E1; }
+  .cat-specialized { background: #1e1530; color: #B57BE8; }
+  .cat-framer { background: #1a1a38; color: #61D2CE; }
+  .cat-content { background: #200a35; color: #B57BE8; }
+  .cat-cro { background: #201528; color: #8719E1; }
+  .cat-design { background: #1e1530; color: #B57BE8; }
+  .cat-odcus { background: #200a35; color: #61D2CE; }
+  .cat-knowledge { background: #1a2a28; color: #61D2CE; }
+  .cat-website { background: #1a1a38; color: #61D2CE; }
+  .cat-intelligence { background: #201528; color: #B57BE8; }
+  .cat-strategy { background: #1a2730; color: #61D2CE; }
+
+  /* Context panel */
+  .context-layout { display: flex; flex: 1; overflow: hidden; }
+  .context-sidebar { width: 220px; border-right: 1px solid var(--border); padding: 16px 0; flex-shrink: 0; overflow-y: auto; }
+  .context-nav-item { padding: 8px 16px; cursor: pointer; color: var(--text2); font-size: 13px; transition: all 0.15s; border-left: 2px solid transparent; }
+  .context-nav-item:hover { color: var(--text); background: var(--surface2); }
+  .context-nav-item.active { color: var(--accent); border-left-color: var(--accent); background: var(--surface2); }
+  .context-main { flex: 1; overflow-y: auto; padding: 24px; }
+  .context-section { margin-bottom: 32px; }
+  .context-section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text); }
+  .context-section h3 { font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* Rules */
+  .rule { display: flex; gap: 12px; padding: 12px; background: var(--surface2); border-radius: 8px; margin-bottom: 8px; border-left: 3px solid var(--accent); }
+  .rule-icon { font-size: 16px; flex-shrink: 0; }
+  .rule-text { font-size: 13px; color: var(--text2); }
+  .rule-text strong { color: var(--text); }
+
+  /* Quick ref table */
+  .ref-table { width: 100%; border-collapse: collapse; }
+  .ref-table th { text-align: left; padding: 8px 12px; font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); }
+  .ref-table td { padding: 10px 12px; font-size: 12px; border-bottom: 1px solid var(--border); }
+  .ref-table tr:last-child td { border-bottom: none; }
+  .ref-table td:first-child { color: var(--text2); }
+  .ref-table td:last-child { font-family: monospace; color: var(--accent); font-size: 11px; }
+
+  /* System map */
+  .map-layout { display: flex; gap: 16px; flex-direction: column; }
+  .map-layer { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; }
+  .map-layer-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text3); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .map-layer-title::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .map-items { display: flex; flex-wrap: wrap; gap: 8px; }
+  .map-item { padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 500; background: var(--surface2); border: 1px solid var(--border); }
+
+  /* Memory cards */
+  .memory-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .memory-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; }
+  .memory-type { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 8px; }
+  .memory-type.feedback { color: var(--yellow); }
+  .memory-type.project { color: var(--green); }
+  .memory-type.reference { color: var(--blue); }
+  .memory-type.user { color: var(--pink); }
+  .memory-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .memory-desc { font-size: 12px; color: var(--text2); }
+
+  .count { display: inline-block; background: var(--surface2); border: 1px solid var(--border); border-radius: 12px; padding: 1px 8px; font-size: 11px; color: var(--text2); margin-left: 6px; }
+  .empty { text-align: center; padding: 60px; color: var(--text3); }
+  .empty-icon { font-size: 32px; margin-bottom: 12px; }
+
+  .context-sidebar::-webkit-scrollbar { width: 4px; }
+  .context-sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+  .context-main::-webkit-scrollbar { width: 6px; }
+  .context-main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div>
+      <div class="logo">ODCUS <span>Cockpit</span></div>
+      <div class="subtitle">ODCUS · Claude Code</div>
+    </div>
+    <div class="stats-bar">
+      <div class="stat"><div class="stat-num" id="stat-capabilities">9</div><div class="stat-label">Capabilities</div></div>
+      <div class="stat"><div class="stat-num" id="stat-workflows">5</div><div class="stat-label">Workflows</div></div>
+      <div class="stat"><div class="stat-num" id="stat-agents">111</div><div class="stat-label">Agents</div></div>
+      <div class="stat"><div class="stat-num" id="stat-integrations">8</div><div class="stat-label">Integrations</div></div>
+    </div>
+  </header>
+  <nav>
+    <div class="tab active" onclick="showTab('capabilities')">Capabilities</div>
+    <div class="tab" onclick="showTab('workflows')">Workflows</div>
+    <div class="tab" onclick="showTab('agents')">Agents</div>
+    <div class="tab" onclick="showTab('skills')">Skills</div>
+    <div class="tab" onclick="showTab('context')">Context & Rules</div>
+    <div class="tab" onclick="showTab('memory')">Memory</div>
+    <div class="tab" onclick="showTab('map')">System Map</div>
+  </nav>
+  <div class="main">
+
+    <!-- CAPABILITIES PANEL -->
+    <div class="panel active" id="panel-capabilities" style="flex-direction:column;">
+      <div class="toolbar">
+        <input type="search" id="cap-search" placeholder="Search capabilities..." oninput="filterCapabilities()">
+        <div class="filter-chips" id="cap-filters"></div>
+      </div>
+      <div class="content">
+        <div class="grid" id="cap-grid"></div>
+      </div>
+    </div>
+
+    <!-- WORKFLOWS PANEL -->
+    <div class="panel" id="panel-workflows" style="flex-direction:column;">
+      <div class="content">
+        <div class="workflow-list" id="workflow-list"></div>
+      </div>
+    </div>
+
+    <!-- AGENTS PANEL -->
+    <div class="panel" id="panel-agents" style="flex-direction:column;">
+      <div class="toolbar">
+        <input type="search" id="agent-search" placeholder="Search agents..." oninput="filterAgents()">
+        <div class="filter-chips" id="agent-filters"></div>
+      </div>
+      <div class="content">
+        <div class="grid" id="agent-grid"></div>
+      </div>
+    </div>
+
+    <!-- SKILLS PANEL -->
+    <div class="panel" id="panel-skills" style="flex-direction:column;">
+      <div class="toolbar">
+        <input type="search" id="skill-search" placeholder="Search skills..." oninput="filterSkills()">
+        <div class="filter-chips" id="skill-filters"></div>
+      </div>
+      <div class="content">
+        <div class="grid" id="skill-grid"></div>
+      </div>
+    </div>
+
+    <!-- CONTEXT PANEL -->
+    <div class="panel" id="panel-context">
+      <div class="context-layout">
+        <div class="context-sidebar">
+          <div class="context-nav-item active" onclick="showContext('workflow', this)">Workflow (RPI)</div>
+          <div class="context-nav-item" onclick="showContext('rules', this)">Key Rules</div>
+          <div class="context-nav-item" onclick="showContext('output', this)">Output Quality</div>
+          <div class="context-nav-item" onclick="showContext('lifecycle', this)">Content Lifecycle</div>
+          <div class="context-nav-item" onclick="showContext('mcp', this)">MCP Servers</div>
+          <div class="context-nav-item" onclick="showContext('quickref', this)">Quick Reference</div>
+        </div>
+        <div class="context-main" id="context-content"></div>
+      </div>
+    </div>
+
+    <!-- MEMORY PANEL -->
+    <div class="panel" id="panel-memory" style="flex-direction:column;">
+      <div class="content">
+        <div class="memory-grid" id="memory-grid"></div>
+      </div>
+    </div>
+
+    <!-- SYSTEM MAP PANEL -->
+    <div class="panel" id="panel-map" style="flex-direction:column;">
+      <div class="content">
+        <div class="map-layout" id="map-content"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+// ─── STATE ────────────────────────────────────────────────────────────────────
+let agentFilter = 'all';
+let skillFilter = 'all';
+let capFilter = 'all';
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('stat-capabilities').textContent = CAPABILITIES.length;
+  document.getElementById('stat-workflows').textContent = WORKFLOWS.length;
+  document.getElementById('stat-agents').textContent = AGENTS.length;
+  document.getElementById('stat-integrations').textContent = MCP_SERVERS.length;
+  renderCapabilities();
+  renderWorkflows();
+  renderAgents();
+  renderSkills();
+  renderContext('workflow');
+  renderMemory();
+  renderMap();
+});
+
+// ─── TABS ─────────────────────────────────────────────────────────────────────
+function showTab(name) {
+  const tabs = ['capabilities','workflows','agents','skills','context','memory','map'];
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab')[tabs.indexOf(name)].classList.add('active');
+  document.getElementById('panel-'+name).classList.add('active');
+}
+
+// ─── CAPABILITIES ─────────────────────────────────────────────────────────────
+function renderCapabilities() {
+  const cats = [...new Set(CAPABILITIES.map(c => c.cat))];
+  const fc = document.getElementById('cap-filters');
+  fc.innerHTML = `<div class="chip active" onclick="setCapFilter('all',this)">All <span class="count">${CAPABILITIES.length}</span></div>`;
+  cats.forEach(c => {
+    const info = CAP_CATEGORIES[c] || { label: c };
+    fc.innerHTML += `<div class="chip" onclick="setCapFilter('${c}',this)">${info.label}</div>`;
+  });
+  filterCapabilities();
+}
+
+function setCapFilter(cat, el) {
+  capFilter = cat;
+  document.querySelectorAll('#cap-filters .chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  filterCapabilities();
+}
+
+function filterCapabilities() {
+  const q = document.getElementById('cap-search').value.toLowerCase();
+  let items = CAPABILITIES;
+  if (capFilter !== 'all') items = items.filter(c => c.cat === capFilter);
+  if (q) items = items.filter(c => c.name.toLowerCase().includes(q) || c.desc.toLowerCase().includes(q) || c.powered.some(p => p.toLowerCase().includes(q)));
+
+  const grid = document.getElementById('cap-grid');
+  if (items.length === 0) {
+    grid.innerHTML = '<div class="empty"><div class="empty-icon">🔍</div>No capabilities match your search</div>';
+    return;
+  }
+
+  grid.innerHTML = items.map(c => {
+    const info = CAP_CATEGORIES[c.cat] || { label: c.cat, color: '#888', bg: '#222' };
+    const statusBadge = c.automated
+      ? `<span class="status-badge status-automated">Automated</span>`
+      : `<span class="status-badge status-active">Active</span>`;
+    return `<div class="card">
+      <div class="card-header">
+        <div class="card-icon" style="background:${info.bg};color:${info.color}">${c.icon}</div>
+        <div style="flex:1">
+          <div class="card-name">${c.name}</div>
+          <div class="card-id" style="margin-top:4px;">${statusBadge}</div>
+        </div>
+      </div>
+      <div class="card-desc">${c.desc}</div>
+      <div class="cap-powered">
+        <span class="cap-powered-label">Powered by</span>
+        ${c.powered.map(p => `<span class="cap-tag">${p}</span>`).join('')}
+      </div>
+      <div class="card-tags" style="margin-top:8px;">
+        <div class="tag" style="background:${info.bg};color:${info.color}">${info.label}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── WORKFLOWS ────────────────────────────────────────────────────────────────
+function renderWorkflows() {
+  const el = document.getElementById('workflow-list');
+  el.innerHTML = WORKFLOWS.map(w => `
+    <div class="workflow-card">
+      <div class="workflow-card-header">
+        <div class="workflow-card-icon" style="background:${w.bg};color:${w.color}">${w.icon}</div>
+        <div>
+          <div class="workflow-card-title">${w.name}</div>
+          <div class="workflow-trigger">Trigger: <span>${w.trigger}</span></div>
+        </div>
+      </div>
+      <div class="workflow-desc">${w.desc}</div>
+      <div class="workflow">
+        ${w.steps.map((s, i) => `
+          <div class="workflow-step">
+            <div class="step-num">0${i+1}</div>
+            <div class="step-name">${s.name}</div>
+            <div class="step-desc">${s.desc}</div>
+          </div>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+// ─── AGENTS ───────────────────────────────────────────────────────────────────
+function renderAgents() {
+  const cats = [...new Set(AGENTS.map(a => a.cat))];
+  const fc = document.getElementById('agent-filters');
+  fc.innerHTML = `<div class="chip active" onclick="setAgentFilter('all',this)">All <span class="count">${AGENTS.length}</span></div>`;
+  cats.forEach(c => {
+    const count = AGENTS.filter(a => a.cat === c).length;
+    const info = AGENT_CATEGORIES[c] || { label: c };
+    fc.innerHTML += `<div class="chip" onclick="setAgentFilter('${c}',this)">${info.label} <span class="count">${count}</span></div>`;
+  });
+  filterAgents();
+}
+
+function setAgentFilter(cat, el) {
+  agentFilter = cat;
+  document.querySelectorAll('#agent-filters .chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  filterAgents();
+}
+
+function filterAgents() {
+  const q = document.getElementById('agent-search').value.toLowerCase();
+  let items = AGENTS;
+  if (agentFilter !== 'all') items = items.filter(a => a.cat === agentFilter);
+  if (q) items = items.filter(a => a.name.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q) || a.id.toLowerCase().includes(q));
+
+  const grid = document.getElementById('agent-grid');
+  if (items.length === 0) {
+    grid.innerHTML = '<div class="empty"><div class="empty-icon">🔍</div>No agents match your search</div>';
+    return;
+  }
+
+  grid.innerHTML = items.map(a => {
+    const info = AGENT_CATEGORIES[a.cat] || { label: a.cat, color: '#888', bg: '#222' };
+    const icon = getCatIcon(a.cat);
+    return `<div class="card">
+      <div class="card-header">
+        <div class="card-icon" style="background:${info.bg};color:${info.color}">${icon}</div>
+        <div>
+          <div class="card-name">${a.name}</div>
+          <div class="card-id">${a.id}</div>
+        </div>
+      </div>
+      <div class="card-desc">${a.desc}</div>
+      <div class="card-tags">
+        <div class="tag" style="background:${info.bg};color:${info.color}">${info.label}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── SKILLS ───────────────────────────────────────────────────────────────────
+function renderSkills() {
+  const cats = [...new Set(SKILLS.map(s => s.cat))];
+  const fc = document.getElementById('skill-filters');
+  fc.innerHTML = `<div class="chip active" onclick="setSkillFilter('all',this)">All <span class="count">${SKILLS.length}</span></div>`;
+  cats.forEach(c => {
+    const count = SKILLS.filter(s => s.cat === c).length;
+    const info = SKILL_CATEGORIES[c] || AGENT_CATEGORIES[c] || { label: c };
+    fc.innerHTML += `<div class="chip" onclick="setSkillFilter('${c}',this)">${info.label} <span class="count">${count}</span></div>`;
+  });
+  filterSkills();
+}
+
+function setSkillFilter(cat, el) {
+  skillFilter = cat;
+  document.querySelectorAll('#skill-filters .chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  filterSkills();
+}
+
+function filterSkills() {
+  const q = document.getElementById('skill-search').value.toLowerCase();
+  let items = SKILLS;
+  if (skillFilter !== 'all') items = items.filter(s => s.cat === skillFilter);
+  if (q) items = items.filter(s => s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q) || s.id.toLowerCase().includes(q));
+
+  const grid = document.getElementById('skill-grid');
+  if (items.length === 0) {
+    grid.innerHTML = '<div class="empty"><div class="empty-icon">🔍</div>No skills match your search</div>';
+    return;
+  }
+
+  grid.innerHTML = items.map(s => {
+    const info = SKILL_CATEGORIES[s.cat] || AGENT_CATEGORIES[s.cat] || { label: s.cat, color: '#888', bg: '#222' };
+    const icon = getSkillIcon(s.cat);
+    return `<div class="card">
+      <div class="card-header">
+        <div class="card-icon" style="background:${info.bg};color:${info.color}">${icon}</div>
+        <div>
+          <div class="card-name">${s.name}</div>
+          <div class="card-id">/${s.id}</div>
+        </div>
+      </div>
+      <div class="card-desc">${s.desc}</div>
+      <div class="card-tags">
+        <div class="tag" style="background:${info.bg};color:${info.color}">${info.label}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── CONTEXT ──────────────────────────────────────────────────────────────────
+function showContext(key, el) {
+  document.querySelectorAll('.context-nav-item').forEach(i => i.classList.remove('active'));
+  el.classList.add('active');
+  renderContext(key);
+}
+
+function renderContext(key) {
+  const el = document.getElementById('context-content');
+  const contexts = {
+    workflow: `
+      <div class="context-section">
+        <h2>Research → Plan → Implement (RPI)</h2>
+        <p style="color:var(--text2);font-size:13px;margin-bottom:20px;">Apply to all non-trivial tasks. Skip for quick lookups, simple edits, direct questions.</p>
+        <div class="workflow">
+          <div class="workflow-step">
+            <div class="step-num">Step 1</div>
+            <div class="step-name">Research</div>
+            <div class="step-desc">Fetch sitemap, read existing content, load context files. Flag gaps and uncertainty before proceeding.</div>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">Step 2</div>
+            <div class="step-name">Plan</div>
+            <div class="step-desc">State assumptions, propose approach (angle, structure, channel). Get explicit approval before drafting.</div>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">Step 3</div>
+            <div class="step-name">Implement</div>
+            <div class="step-desc">Execute the agreed plan. Flag deviations immediately rather than silently pivoting.</div>
+          </div>
+        </div>
+      </div>
+      <div class="context-section">
+        <h3>Content Lifecycle</h3>
+        <div class="workflow" style="margin-bottom:0;">
+          ${['Fetch sitemap','Identify gaps','Create locally','Publish to Framer','Update blog-index.md','Schedule Publer','Archive source'].map((s,i) => `<div class="workflow-step" style="flex:unset;padding:12px 14px;"><div class="step-num">0${i+1}</div><div class="step-name" style="font-size:11px;">${s}</div></div>`).join('')}
+        </div>
+      </div>`,
+
+    rules: `
+      <div class="context-section">
+        <h2>Key Rules</h2>
+        ${[
+          ['🗺️','Always fetch sitemap first','https://www.odcus.com/sitemap.xml before referencing any existing content'],
+          ['🚫','No hallucination','If uncertain, say so. Never invent facts or statistics'],
+          ['📦','Selective loading','Load only what the current task requires from context-index.md'],
+          ['🎨','Brand-Style-Guide for visuals','Always read Brand-Style-Guide.md before any visual output'],
+          ['📁','Archive ≠ source of truth','Live sitemap wins over all local files in _archive/'],
+          ['🔇','Mask MCP outputs','After extracting needed data, replace raw output with compact reference'],
+          ['⚡','Compact at Plan→Implement','Compact context at the boundary between Plan and Implement phases'],
+          ['💾','Save markitdown conversions','After convert_to_markdown, save result as .md in 02-operations/knowhow/raw/'],
+        ].map(([icon,title,desc]) => `<div class="rule"><div class="rule-icon">${icon}</div><div class="rule-text"><strong>${title}</strong> — ${desc}</div></div>`).join('')}
+      </div>`,
+
+    output: `
+      <div class="context-section">
+        <h2>Output Quality Standards</h2>
+        <h3 style="margin-bottom:12px;">Tone & Language</h3>
+        ${[
+          ['Plain language','No AI-slop words: leverage, transformative, game-changing, robust, seamlessly, empower, revolutionize'],
+          ['No exaggeration','Use "in our experience" not "every company" or "all businesses"'],
+          ['No drama','State facts, let them land without inflation'],
+          ['Swiss professional register','Direct, precise, credible'],
+        ].map(([t,d]) => `<div class="rule"><div class="rule-text"><strong>${t}</strong> — ${d}</div></div>`).join('')}
+        <h3 style="margin-top:20px;margin-bottom:12px;">Content Structure (Every Piece)</h3>
+        <div class="workflow">
+          <div class="workflow-step"><div class="step-num">01</div><div class="step-name">One Idea</div><div class="step-desc">Single clear thesis, not a list of topics</div></div>
+          <div class="workflow-step"><div class="step-num">02</div><div class="step-name">Story / Example</div><div class="step-desc">Concrete situation, not abstract principle</div></div>
+          <div class="workflow-step"><div class="step-num">03</div><div class="step-name">Reasons</div><div class="step-desc">Why this matters (not step-by-step how-to)</div></div>
+          <div class="workflow-step"><div class="step-num">04</div><div class="step-name">Soft CTA</div><div class="step-desc">Invite action without pressure</div></div>
+        </div>
+        <h3 style="margin-top:20px;margin-bottom:12px;">What to Avoid</h3>
+        ${['Filler openings ("In today\'s digital landscape...")','Lists that replace thinking (3 bullet points ≠ an argument)','Passive voice for key claims','Statistics without a source','Summarizing what was just done'].map(t => `<div class="rule" style="border-left-color:var(--red)"><div class="rule-icon">✕</div><div class="rule-text">${t}</div></div>`).join('')}
+      </div>`,
+
+    lifecycle: `
+      <div class="context-section">
+        <h2>Source of Truth Hierarchy</h2>
+        ${[
+          ['🌐','odcus.com (live sitemap)','Authoritative for all published content. Always check before claiming something exists or doesn\'t.','var(--green)'],
+          ['📂','00-setup/context/ files','Authoritative for company facts, positioning, and strategy.','var(--accent)'],
+          ['📝','Local working files','Current drafts and in-progress work. Not published yet.','var(--yellow)'],
+          ['🗃️','_archive/ folders','Old production files after publishing. Never treat as current source.','var(--text3)'],
+        ].map(([icon,title,desc,color]) => `<div class="rule" style="border-left-color:${color}"><div class="rule-icon">${icon}</div><div class="rule-text"><strong>${title}</strong> — ${desc}</div></div>`).join('')}
+      </div>
+      <div class="context-section">
+        <h3>Quick Reference — Task Routing</h3>
+        <table class="ref-table">
+          <tr><th>Task</th><th>Start Here</th></tr>
+          <tr><td>Any content</td><td>company-profile.md + keyword-strategy.md</td></tr>
+          <tr><td>Blog post</td><td>Skill: /odcus-blog → Blog-Style-Guide.md</td></tr>
+          <tr><td>Whitepaper</td><td>Skill: /odcus-whitepaper → Whitepaper-Style-Guide.md</td></tr>
+          <tr><td>LinkedIn</td><td>Skill: /odcus-social → LinkedIn-Content-Engine-Strategy.md</td></tr>
+          <tr><td>Website changes</td><td>Agent: framer-website-manager</td></tr>
+          <tr><td>Finance</td><td>Agent: treasury-cash-manager → 05-finance/</td></tr>
+          <tr><td>Visual content</td><td>Brand-Style-Guide.md + illustration guide</td></tr>
+        </table>
+      </div>`,
+
+    mcp: `
+      <div class="context-section">
+        <h2>MCP Servers</h2>
+        <div class="grid">
+          ${MCP_SERVERS.map(s => `
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon" style="background:#200a35;color:${s.color};font-weight:700;font-size:12px;">${s.name.substring(0,2)}</div>
+                <div>
+                  <div class="card-name">${s.name}</div>
+                  <div class="card-id">mcp__${s.id}</div>
+                </div>
+              </div>
+              <div class="card-desc">${s.desc}</div>
+              <div class="card-tags" style="margin-top:10px;">
+                ${s.tools.map(t => `<div class="tag" style="background:#200a35;color:${s.color};font-size:10px;">${t}</div>`).join('')}
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>`,
+
+    quickref: `
+      <div class="context-section">
+        <h2>Quick Reference</h2>
+        <h3 style="margin-bottom:12px;">Agent Naming Conventions</h3>
+        <table class="ref-table">
+          <tr><th>Suffix</th><th>Domain</th><th>Example</th></tr>
+          <tr><td>-fs</td><td>Financial Strategy</td><td>business-strategist-fs</td></tr>
+          <tr><td>-gr</td><td>Growth / Revenue</td><td>revenue-analyst-gr</td></tr>
+          <tr><td>-mx</td><td>Market / Experience</td><td>competitive-intelligence-mx</td></tr>
+          <tr><td>-aa</td><td>Automation / Architecture</td><td>automation-architect-aa</td></tr>
+          <tr><td>-at</td><td>Account Team</td><td>customer-support-at</td></tr>
+          <tr><td>(none)</td><td>General</td><td>code-reviewer</td></tr>
+        </table>
+        <h3 style="margin-top:24px;margin-bottom:12px;">Key File Paths</h3>
+        <table class="ref-table">
+          <tr><th>Purpose</th><th>Path</th></tr>
+          <tr><td>Context index</td><td>00-setup/context/context-index.md</td></tr>
+          <tr><td>Company profile</td><td>00-setup/context/company-profile.md</td></tr>
+          <tr><td>Keyword strategy</td><td>00-setup/context/keyword-strategy.md</td></tr>
+          <tr><td>Brand style guide</td><td>03-marketing/guides/Brand-Style-Guide.md</td></tr>
+          <tr><td>Blog index</td><td>00-setup/context/blog-index.md</td></tr>
+          <tr><td>Finance</td><td>05-finance/</td></tr>
+          <tr><td>Agent catalog</td><td>~/.claude/AGENTS.md</td></tr>
+          <tr><td>Memory index</td><td>~/.claude/projects/.../MEMORY.md</td></tr>
+        </table>
+      </div>`,
+  };
+
+  el.innerHTML = contexts[key] || '';
+}
+
+// ─── MEMORY ───────────────────────────────────────────────────────────────────
+function renderMemory() {
+  const grid = document.getElementById('memory-grid');
+  grid.innerHTML = MEMORY_ITEMS.map(m => `
+    <div class="memory-card">
+      <div class="memory-type ${m.type}">${m.type.toUpperCase()}</div>
+      <div class="memory-title">${m.title}</div>
+      <div class="memory-desc">${m.desc}</div>
+    </div>`).join('');
+}
+
+// ─── SYSTEM MAP ───────────────────────────────────────────────────────────────
+function renderMap() {
+  const el = document.getElementById('map-content');
+
+  const layers = [
+    {
+      title: `Business Capabilities (${CAPABILITIES.length})`,
+      items: CAPABILITIES.map(c => c.name),
+      color: '#61D2CE'
+    },
+    {
+      title: `Active Workflows (${WORKFLOWS.length})`,
+      items: WORKFLOWS.map(w => w.name),
+      color: '#8719E1'
+    },
+    {
+      title: 'Global Config Layer (~/.claude/)',
+      items: ['CLAUDE.md (global rules)', 'AGENTS.md (111 agents)', 'settings.json', 'settings.local.json'],
+      color: '#B57BE8'
+    },
+    {
+      title: `Agent Layer (${AGENTS.length} agents across ${Object.keys(AGENT_CATEGORIES).length} categories)`,
+      items: Object.entries(AGENT_CATEGORIES).map(([k,v]) => `${v.label} (${AGENTS.filter(a=>a.cat===k).length})`),
+      color: '#7430F7'
+    },
+    {
+      title: `Skills Layer (${SKILLS.length} skills)`,
+      items: Object.entries(SKILL_CATEGORIES).map(([k,v]) => `${v.label} (${SKILLS.filter(s=>s.cat===k).length})`),
+      color: '#8719E1'
+    },
+    {
+      title: `MCP Integrations (${MCP_SERVERS.length} servers)`,
+      items: MCP_SERVERS.map(s => s.name),
+      color: '#61D2CE'
+    },
+    {
+      title: 'External Systems',
+      items: ['odcus.com (Framer)', 'Bexio ERP', 'Publer (social)', 'OneDrive (assets)', 'Ahrefs (SEO)', 'HubSpot (CRM)', 'Supabase (DB)', 'Canva (design)'],
+      color: '#B57BE8'
+    },
+    {
+      title: 'Automated Jobs',
+      items: ['KB File Watcher (24/7 LaunchD)', 'KB Daily Cron (16:30 Zurich)', 'Daily Log (GitHub Actions + /schedule)'],
+      color: '#ef4444'
+    },
+  ];
+
+  el.innerHTML = layers.map(l => `
+    <div class="map-layer">
+      <div class="map-layer-title" style="--accent:${l.color}">${l.title}</div>
+      <div class="map-items">
+        ${l.items.map(i => `<div class="map-item" style="border-color:${l.color}22;color:${l.color}">${i}</div>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+// ─── ICONS ────────────────────────────────────────────────────────────────────
+function getCatIcon(cat) {
+  const icons = { engineering:'⚙️', product:'🎨', business:'📊', marketing:'📣', seo:'🔍', sales:'💼', finance:'💰', infrastructure:'☁️', security:'🔒', docs:'📚', automation:'🤖', operations:'⚡', research:'🧪', specialized:'🛠️', framer:'🖼️', content:'✍️', social:'📱', odcus:'🇨🇭' };
+  return icons[cat] || '●';
+}
+function getSkillIcon(cat) {
+  const icons = { seo:'🔍', marketing:'📣', cro:'📈', design:'🎨', business:'📊', odcus:'🇨🇭' };
+  return icons[cat] || '●';
+}
+</script>
+</body>
+</html>
