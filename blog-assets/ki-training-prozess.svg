@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">Der 4-Schritte-Ansatz für KI-Training</text>
+
+  <!-- Step 1: Assessment (purple) -->
+  <rect x="60" y="120" width="240" height="330" rx="14" fill="#590DA0"/>
+  <circle cx="180" cy="100" r="28" fill="#590DA0" stroke="#F8F7FF" stroke-width="3"/>
+  <text x="180" y="107" text-anchor="middle" font-size="20" font-weight="700" fill="white">1</text>
+  <text x="180" y="175" text-anchor="middle" font-size="20" font-weight="700" fill="white">Assessment</text>
+  <line x1="100" y1="195" x2="260" y2="195" stroke="white" stroke-width="1" opacity="0.3"/>
+  <text x="180" y="228" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Welche KI-Tools</text>
+  <text x="180" y="250" text-anchor="middle" font-size="13" fill="white" opacity="0.9">werden genutzt?</text>
+  <text x="180" y="285" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Von wem?</text>
+  <text x="180" y="307" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Was wissen sie?</text>
+  <text x="180" y="342" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Was fehlt?</text>
+  <rect x="90" y="375" width="180" height="36" rx="8" fill="white" opacity="0.18"/>
+  <text x="180" y="399" text-anchor="middle" font-size="13" fill="white" font-weight="600">1–2 Tage</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="312,278 336,268 336,288" fill="#1A1A2E" opacity="0.4"/>
+  <line x1="303" y1="278" x2="330" y2="278" stroke="#1A1A2E" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Step 2: Ziele (teal) -->
+  <rect x="340" y="120" width="240" height="330" rx="14" fill="#61D2CE"/>
+  <circle cx="460" cy="100" r="28" fill="#61D2CE" stroke="#F8F7FF" stroke-width="3"/>
+  <text x="460" y="107" text-anchor="middle" font-size="20" font-weight="700" fill="#1A1A2E">2</text>
+  <text x="460" y="175" text-anchor="middle" font-size="20" font-weight="700" fill="#1A1A2E">Ziele</text>
+  <line x1="380" y1="195" x2="540" y2="195" stroke="#1A1A2E" stroke-width="1" opacity="0.2"/>
+  <text x="460" y="228" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.9">Rollenbezogene</text>
+  <text x="460" y="250" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.9">Lernziele definieren</text>
+  <text x="460" y="285" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.9">Entwickler vs. CFO</text>
+  <text x="460" y="307" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.9">vs. Compliance</text>
+  <text x="460" y="342" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.9">Konkret messbar</text>
+  <rect x="370" y="375" width="180" height="36" rx="8" fill="#1A1A2E" opacity="0.1"/>
+  <text x="460" y="399" text-anchor="middle" font-size="13" fill="#1A1A2E" font-weight="600">3–4 Rollengruppen</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="592,278 616,268 616,288" fill="#1A1A2E" opacity="0.4"/>
+  <line x1="583" y1="278" x2="610" y2="278" stroke="#1A1A2E" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Step 3: Training (bright purple) -->
+  <rect x="620" y="120" width="240" height="330" rx="14" fill="#8719E1"/>
+  <circle cx="740" cy="100" r="28" fill="#8719E1" stroke="#F8F7FF" stroke-width="3"/>
+  <text x="740" y="107" text-anchor="middle" font-size="20" font-weight="700" fill="white">3</text>
+  <text x="740" y="175" text-anchor="middle" font-size="20" font-weight="700" fill="white">Training</text>
+  <line x1="660" y1="195" x2="820" y2="195" stroke="white" stroke-width="1" opacity="0.3"/>
+  <text x="740" y="228" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Grundlagen (alle)</text>
+  <text x="740" y="250" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Fachtraining je Rolle</text>
+  <text x="740" y="285" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Reale Beispiele</text>
+  <text x="740" y="307" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Kein Eintagsevent</text>
+  <text x="740" y="342" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Laufende Updates</text>
+  <rect x="650" y="375" width="180" height="36" rx="8" fill="white" opacity="0.18"/>
+  <text x="740" y="399" text-anchor="middle" font-size="13" fill="white" font-weight="600">Mehrstufig</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="872,278 896,268 896,288" fill="#1A1A2E" opacity="0.4"/>
+  <line x1="863" y1="278" x2="890" y2="278" stroke="#1A1A2E" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Step 4: Messen (dark) -->
+  <rect x="900" y="120" width="240" height="330" rx="14" fill="#1A1A2E"/>
+  <circle cx="1020" cy="100" r="28" fill="#1A1A2E" stroke="#F8F7FF" stroke-width="3"/>
+  <text x="1020" y="107" text-anchor="middle" font-size="20" font-weight="700" fill="white">4</text>
+  <text x="1020" y="175" text-anchor="middle" font-size="20" font-weight="700" fill="white">Messen</text>
+  <line x1="940" y1="195" x2="1100" y2="195" stroke="white" stroke-width="1" opacity="0.3"/>
+  <text x="1020" y="228" text-anchor="middle" font-size="13" fill="white" opacity="0.9">KPIs festlegen</text>
+  <text x="1020" y="250" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Fehlerquoten</text>
+  <text x="1020" y="285" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Eskalations-</text>
+  <text x="1020" y="307" text-anchor="middle" font-size="13" fill="white" opacity="0.9">verhalten prüfen</text>
+  <text x="1020" y="342" text-anchor="middle" font-size="13" fill="white" opacity="0.9">Iterieren</text>
+  <rect x="930" y="375" width="180" height="36" rx="8" fill="white" opacity="0.18"/>
+  <text x="1020" y="399" text-anchor="middle" font-size="13" fill="white" font-weight="600">Laufend</text>
+
+  <!-- Footer -->
+  <text x="600" y="510" text-anchor="middle" font-size="15" fill="#590DA0" font-weight="600">KI-Training ist kein Einmalevent – es ist ein kontinuierlicher Prozess.</text>
+  <text x="600" y="540" text-anchor="middle" font-size="13" fill="#888">Schritt 1 (Baselinedaten) ist nicht optional – ohne Assessment weisst du nicht, wo das Training ansetzen muss.</text>
+</svg>
