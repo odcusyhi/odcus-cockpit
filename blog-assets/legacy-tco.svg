@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">True Cost: Legacy vs. Modernisierung</text>
+
+  <!-- Y axis -->
+  <line x1="130" y1="80" x2="130" y2="500" stroke="#1A1A2E" stroke-width="2" opacity="0.4"/>
+  <text x="50" y="290" text-anchor="middle" font-size="13" fill="#1A1A2E" font-weight="600" transform="rotate(-90,50,290)">Jährliche Kosten (CHF)</text>
+
+  <!-- X baseline -->
+  <line x1="130" y1="500" x2="1080" y2="500" stroke="#1A1A2E" stroke-width="2" opacity="0.3"/>
+
+  <!-- LEFT BAR GROUP: Legacy-Kosten (jährlich) - stacked -->
+  <!-- Total bar height: ~380px -->
+  <!-- 5 segments (Wartung, Support, Ausfallkosten, Integrations-Aufwand, Opportunitätskosten) -->
+
+  <!-- Segment 5 (bottom): Wartung - purple 1 -->
+  <rect x="200" y="430" width="200" height="70" rx="0" fill="#590DA0"/>
+  <text x="300" y="470" text-anchor="middle" font-size="12" fill="white" font-weight="600">Wartung</text>
+
+  <!-- Segment 4: Support - purple 2 -->
+  <rect x="200" y="360" width="200" height="70" rx="0" fill="#6E25B3"/>
+  <text x="300" y="400" text-anchor="middle" font-size="12" fill="white" font-weight="600">Support</text>
+
+  <!-- Segment 3: Ausfallkosten - purple 3 -->
+  <rect x="200" y="285" width="200" height="75" rx="0" fill="#8719E1"/>
+  <text x="300" y="327" text-anchor="middle" font-size="12" fill="white" font-weight="600">Ausfallkosten</text>
+
+  <!-- Segment 2: Integrations-Aufwand - purple 4 -->
+  <rect x="200" y="205" width="200" height="80" rx="0" fill="#A044F0"/>
+  <text x="300" y="250" text-anchor="middle" font-size="12" fill="white" font-weight="600">Integrations-Aufwand</text>
+
+  <!-- Segment 1 (top): Opportunitätskosten - purple 5 -->
+  <rect x="200" y="120" width="200" height="85" rx="4" fill="#C070FF"/>
+  <text x="300" y="162" text-anchor="middle" font-size="12" fill="white" font-weight="600">Opportunitätskosten</text>
+
+  <!-- Bar top cap (rounded) -->
+  <rect x="200" y="118" width="200" height="8" rx="4" fill="#C070FF"/>
+
+  <!-- Label below left bar -->
+  <text x="300" y="530" text-anchor="middle" font-size="14" font-weight="700" fill="#590DA0">Legacy-Kosten</text>
+  <text x="300" y="550" text-anchor="middle" font-size="12" fill="#888">(jährlich)</text>
+
+  <!-- RIGHT BAR GROUP: Modernisierung (auf 3 Jahre amortisiert) -->
+  <!-- ~40% of legacy height = ~152px tall -->
+  <rect x="680" y="348" width="200" height="152" rx="4" fill="#61D2CE"/>
+  <text x="780" y="420" text-anchor="middle" font-size="13" fill="#1A1A2E" font-weight="600">Modernisierung</text>
+  <text x="780" y="442" text-anchor="middle" font-size="12" fill="#1A1A2E" opacity="0.8">auf 3 Jahre</text>
+  <text x="780" y="462" text-anchor="middle" font-size="12" fill="#1A1A2E" opacity="0.8">amortisiert</text>
+
+  <!-- Label below right bar -->
+  <text x="780" y="530" text-anchor="middle" font-size="14" font-weight="700" fill="#0A8A87">Modernisierung</text>
+  <text x="780" y="550" text-anchor="middle" font-size="12" fill="#888">(jährliche Rate, 3 J.)</text>
+
+  <!-- Arrow + label between bars -->
+  <line x1="420" y1="300" x2="660" y2="300" stroke="#1A1A2E" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <polygon points="656,294 668,300 656,306" fill="#1A1A2E" opacity="0.4"/>
+  <rect x="440" y="260" width="220" height="36" rx="8" fill="#590DA0" opacity="0.1" stroke="#590DA0" stroke-width="1"/>
+  <text x="550" y="284" text-anchor="middle" font-size="13" fill="#590DA0" font-weight="600">Legacy kostet oft mehr</text>
+
+  <!-- Height annotation left bar -->
+  <line x1="420" y1="120" x2="440" y2="120" stroke="#888" stroke-width="1.5"/>
+  <line x1="420" y1="500" x2="440" y2="500" stroke="#888" stroke-width="1.5"/>
+  <line x1="430" y1="120" x2="430" y2="500" stroke="#888" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="455" y="315" font-size="12" fill="#888">Total</text>
+  <text x="455" y="332" font-size="12" fill="#590DA0" font-weight="700">CHF X</text>
+
+  <!-- Height annotation right bar -->
+  <line x1="900" y1="348" x2="920" y2="348" stroke="#888" stroke-width="1.5"/>
+  <line x1="900" y1="500" x2="920" y2="500" stroke="#888" stroke-width="1.5"/>
+  <line x1="910" y1="348" x2="910" y2="500" stroke="#888" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="925" y="428" font-size="12" fill="#888">~40%</text>
+  <text x="925" y="445" font-size="12" fill="#0A8A87" font-weight="700">von CHF X</text>
+
+  <!-- Footer callout -->
+  <rect x="200" y="575" width="760" height="38" rx="8" fill="#590DA0" opacity="0.08" stroke="#590DA0" stroke-width="1"/>
+  <text x="580" y="600" text-anchor="middle" font-size="14" fill="#590DA0" font-weight="600">Legacy kostet oft mehr als die Ablösung – wird aber nie so dargestellt.</text>
+</svg>
