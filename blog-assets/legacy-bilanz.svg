@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">Legacy IT als versteckte Verbindlichkeit</text>
+
+  <!-- Balance sheet container -->
+  <rect x="100" y="75" width="1000" height="440" rx="12" fill="white" stroke="#E0DDE8" stroke-width="2"/>
+
+  <!-- Header row -->
+  <rect x="100" y="75" width="500" height="50" rx="0" fill="#F0E8FF"/>
+  <rect x="600" y="75" width="500" height="50" rx="0" fill="#590DA0" opacity="0.85"/>
+  <text x="350" y="108" text-anchor="middle" font-size="18" font-weight="700" fill="#590DA0">AKTIVEN</text>
+  <text x="850" y="108" text-anchor="middle" font-size="18" font-weight="700" fill="white">PASSIVEN</text>
+
+  <!-- Divider between columns -->
+  <line x1="600" y1="75" x2="600" y2="515" stroke="#E0DDE8" stroke-width="2"/>
+
+  <!-- AKTIVEN rows (gray, standard) -->
+  <text x="130" y="158" font-size="14" fill="#888">Kasse und Bankguthaben</text>
+  <text x="560" y="158" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="120" y1="168" x2="580" y2="168" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="130" y="196" font-size="14" fill="#888">Forderungen aus Lieferungen</text>
+  <text x="560" y="196" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="120" y1="206" x2="580" y2="206" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="130" y="234" font-size="14" fill="#888">Vorräte / Lager</text>
+  <text x="560" y="234" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="120" y1="244" x2="580" y2="244" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="130" y="272" font-size="14" fill="#888">Sachanlagen</text>
+  <text x="560" y="272" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="120" y1="282" x2="580" y2="282" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="130" y="310" font-size="14" fill="#888">Immaterielle Werte</text>
+  <text x="560" y="310" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="120" y1="320" x2="580" y2="320" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="130" y="348" font-size="14" fill="#888">Finanzanlagen</text>
+  <text x="560" y="348" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="120" y1="358" x2="580" y2="358" stroke="#E8E8F0" stroke-width="1"/>
+
+  <!-- PASSIVEN rows (standard) -->
+  <text x="630" y="158" font-size="14" fill="#888">Verbindlichkeiten Lieferanten</text>
+  <text x="1080" y="158" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="620" y1="168" x2="1080" y2="168" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="630" y="196" font-size="14" fill="#888">Kurzfristige Verbindlichkeiten</text>
+  <text x="1080" y="196" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="620" y1="206" x2="1080" y2="206" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="630" y="234" font-size="14" fill="#888">Langfristige Schulden</text>
+  <text x="1080" y="234" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="620" y1="244" x2="1080" y2="244" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="630" y="272" font-size="14" fill="#888">Rückstellungen</text>
+  <text x="1080" y="272" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="620" y1="282" x2="1080" y2="282" stroke="#E8E8F0" stroke-width="1"/>
+
+  <text x="630" y="310" font-size="14" fill="#888">Eigenkapital</text>
+  <text x="1080" y="310" text-anchor="end" font-size="14" fill="#888">CHF xxx'xxx</text>
+  <line x1="620" y1="320" x2="1080" y2="320" stroke="#E8E8F0" stroke-width="1"/>
+
+  <!-- HIGHLIGHTED LEGACY ROW -->
+  <rect x="600" y="330" width="500" height="50" rx="0" fill="#F0E8FF"/>
+  <rect x="600" y="330" width="4" height="50" fill="#590DA0"/>
+  <!-- Server icon (simple) -->
+  <rect x="618" y="340" width="30" height="22" rx="3" fill="#590DA0" opacity="0.7"/>
+  <rect x="622" y="344" width="6" height="4" rx="1" fill="white" opacity="0.8"/>
+  <rect x="631" y="344" width="14" height="4" rx="1" fill="white" opacity="0.5"/>
+  <rect x="622" y="351" width="6" height="4" rx="1" fill="white" opacity="0.8"/>
+  <rect x="631" y="351" width="14" height="4" rx="1" fill="white" opacity="0.5"/>
+  <text x="660" y="361" font-size="14" font-weight="700" fill="#590DA0">Legacy-IT-System</text>
+  <text x="1080" y="362" text-anchor="end" font-size="16" font-weight="700" fill="#8719E1">CHF ???</text>
+  <text x="1080" y="378" text-anchor="end" font-size="12" fill="#8719E1" opacity="0.8">nicht erfasst</text>
+
+  <!-- Question marks decoration -->
+  <text x="1090" y="355" font-size="20" font-weight="700" fill="#590DA0" opacity="0.3">?</text>
+
+  <!-- Total rows -->
+  <line x1="120" y1="390" x2="580" y2="390" stroke="#1A1A2E" stroke-width="1.5" opacity="0.2"/>
+  <text x="130" y="415" font-size="15" font-weight="700" fill="#1A1A2E">Total Aktiven</text>
+  <text x="560" y="415" text-anchor="end" font-size="15" font-weight="700" fill="#1A1A2E">CHF xxx'xxx</text>
+
+  <line x1="620" y1="390" x2="1080" y2="390" stroke="#1A1A2E" stroke-width="1.5" opacity="0.2"/>
+  <text x="630" y="415" font-size="15" font-weight="700" fill="#1A1A2E">Total Passiven</text>
+  <text x="1080" y="415" text-anchor="end" font-size="15" font-weight="700" fill="#590DA0">CHF ???</text>
+
+  <!-- Callout below -->
+  <rect x="280" y="530" width="640" height="70" rx="10" fill="#590DA0" opacity="0.1" stroke="#590DA0" stroke-width="1.5"/>
+  <text x="600" y="562" text-anchor="middle" font-size="16" font-weight="700" fill="#590DA0">Was steht nicht in Ihrer Bilanz?</text>
+  <text x="600" y="585" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.7">Legacy-IT-Kosten tauchen nie als Verbindlichkeit auf – bis jemand sie ausrechnet.</text>
+</svg>
