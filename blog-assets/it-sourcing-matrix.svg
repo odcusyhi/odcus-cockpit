@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">IT Sourcing Entscheidungsmatrix</text>
+
+  <!-- Axes area -->
+  <!-- X axis label -->
+  <text x="600" y="600" text-anchor="middle" font-size="16" fill="#1A1A2E" font-weight="600">IT-Komplexität</text>
+  <text x="390" y="618" text-anchor="middle" font-size="13" fill="#888">niedrig</text>
+  <text x="810" y="618" text-anchor="middle" font-size="13" fill="#888">hoch</text>
+
+  <!-- Y axis label -->
+  <text x="38" y="340" text-anchor="middle" font-size="16" fill="#1A1A2E" font-weight="600" transform="rotate(-90,38,340)">Strategische IT-Relevanz</text>
+  <text x="56" y="510" text-anchor="middle" font-size="13" fill="#888" transform="rotate(-90,56,510)">niedrig</text>
+  <text x="56" y="195" text-anchor="middle" font-size="13" fill="#888" transform="rotate(-90,56,195)">hoch</text>
+
+  <!-- Quadrant boxes -->
+  <!-- Top-left: Co-Sourcing (purple) -->
+  <rect x="80" y="75" width="510" height="250" rx="12" fill="#590DA0" opacity="0.12"/>
+  <rect x="80" y="75" width="510" height="250" rx="12" fill="none" stroke="#590DA0" stroke-width="2"/>
+
+  <!-- Top-right: In-House (teal) -->
+  <rect x="610" y="75" width="510" height="250" rx="12" fill="#61D2CE" opacity="0.15"/>
+  <rect x="610" y="75" width="510" height="250" rx="12" fill="none" stroke="#61D2CE" stroke-width="2"/>
+
+  <!-- Bottom-left: Managed Services (light purple) -->
+  <rect x="80" y="345" width="510" height="230" rx="12" fill="#F0E8FF"/>
+  <rect x="80" y="345" width="510" height="230" rx="12" fill="none" stroke="#8719E1" stroke-width="2"/>
+
+  <!-- Bottom-right: Projektbasiert (light teal) -->
+  <rect x="610" y="345" width="510" height="230" rx="12" fill="#61D2CE" opacity="0.08"/>
+  <rect x="610" y="345" width="510" height="230" rx="12" fill="none" stroke="#61D2CE" stroke-width="2"/>
+
+  <!-- Divider lines -->
+  <line x1="80" y1="325" x2="1120" y2="325" stroke="#1A1A2E" stroke-width="2" stroke-dasharray="6,4" opacity="0.3"/>
+  <line x1="590" y1="75" x2="590" y2="575" stroke="#1A1A2E" stroke-width="2" stroke-dasharray="6,4" opacity="0.3"/>
+
+  <!-- Top-left label: Co-Sourcing -->
+  <text x="335" y="165" text-anchor="middle" font-size="26" font-weight="700" fill="#590DA0">Co-Sourcing</text>
+  <text x="335" y="198" text-anchor="middle" font-size="15" fill="#590DA0" opacity="0.85">Interner IT-Lead + externe Partner</text>
+  <text x="335" y="222" text-anchor="middle" font-size="14" fill="#1A1A2E" opacity="0.7">Hohe Relevanz, moderate Komplexität</text>
+  <text x="335" y="248" text-anchor="middle" font-size="13" fill="#590DA0" font-weight="600">Empfohlen: 100–500 MA</text>
+
+  <!-- Top-right label: In-House -->
+  <text x="865" y="165" text-anchor="middle" font-size="26" font-weight="700" fill="#0A8A87">In-House</text>
+  <text x="865" y="198" text-anchor="middle" font-size="15" fill="#0A8A87" opacity="0.85">Volle interne IT-Kontrolle</text>
+  <text x="865" y="222" text-anchor="middle" font-size="14" fill="#1A1A2E" opacity="0.7">IT als Kernkompetenz / Differenzierung</text>
+  <text x="865" y="248" text-anchor="middle" font-size="13" fill="#0A8A87" font-weight="600">Fintech, OT/IT-Umgebungen</text>
+
+  <!-- Bottom-left label: Managed Services -->
+  <text x="335" y="420" text-anchor="middle" font-size="26" font-weight="700" fill="#8719E1">Managed Services</text>
+  <text x="335" y="453" text-anchor="middle" font-size="15" fill="#8719E1" opacity="0.85">MSP übernimmt operativen Betrieb</text>
+  <text x="335" y="477" text-anchor="middle" font-size="14" fill="#1A1A2E" opacity="0.7">Niedrige Relevanz, geringe Komplexität</text>
+  <text x="335" y="503" text-anchor="middle" font-size="13" fill="#8719E1" font-weight="600">20–150 MA, Commodity-IT</text>
+
+  <!-- Bottom-right label: Projektbasiert -->
+  <text x="865" y="420" text-anchor="middle" font-size="26" font-weight="700" fill="#0A8A87">Projektbasiert</text>
+  <text x="865" y="453" text-anchor="middle" font-size="15" fill="#0A8A87" opacity="0.85">Externe Spezialisten für Projekte</text>
+  <text x="865" y="477" text-anchor="middle" font-size="14" fill="#1A1A2E" opacity="0.7">Spezifische Initiativen, kein Dauerbetrieb</text>
+  <text x="865" y="503" text-anchor="middle" font-size="13" fill="#0A8A87" font-weight="600">Ergänzend zu anderen Modellen</text>
+</svg>
