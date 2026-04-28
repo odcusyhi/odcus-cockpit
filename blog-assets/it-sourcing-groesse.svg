@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">Welches Modell passt zu welcher Grösse?</text>
+
+  <!-- X Axis -->
+  <line x1="200" y1="540" x2="1080" y2="540" stroke="#1A1A2E" stroke-width="2"/>
+  <text x="200" y="568" text-anchor="middle" font-size="13" fill="#888">10</text>
+  <text x="376" y="568" text-anchor="middle" font-size="13" fill="#888">50</text>
+  <text x="552" y="568" text-anchor="middle" font-size="13" fill="#888">100</text>
+  <text x="728" y="568" text-anchor="middle" font-size="13" fill="#888">200</text>
+  <text x="904" y="568" text-anchor="middle" font-size="13" fill="#888">350</text>
+  <text x="1080" y="568" text-anchor="middle" font-size="13" fill="#888">500</text>
+  <text x="640" y="595" text-anchor="middle" font-size="15" fill="#1A1A2E" font-weight="600">Anzahl Mitarbeitende</text>
+
+  <!-- Y axis labels (rows) -->
+  <text x="180" y="135" text-anchor="end" font-size="15" font-weight="700" fill="#0A8A87">In-House</text>
+  <text x="180" y="240" text-anchor="end" font-size="15" font-weight="700" fill="#0A8A87">Managed</text>
+  <text x="180" y="258" text-anchor="end" font-size="15" font-weight="700" fill="#0A8A87">Services</text>
+  <text x="180" y="365" text-anchor="end" font-size="15" font-weight="700" fill="#590DA0">Co-Sourcing</text>
+  <text x="180" y="475" text-anchor="end" font-size="15" font-weight="700" fill="#8719E1">Projektbasiert</text>
+
+  <!-- Row: In-House: 200-500 (purple band) -->
+  <rect x="728" y="100" width="352" height="55" rx="8" fill="#590DA0" opacity="0.85"/>
+  <text x="904" y="133" text-anchor="middle" font-size="14" fill="white" font-weight="600">200–500 MA</text>
+
+  <!-- Row: Managed Services: 20-150 (teal band) -->
+  <rect x="235" y="205" width="493" height="55" rx="8" fill="#61D2CE" opacity="0.9"/>
+  <text x="481" y="238" text-anchor="middle" font-size="14" fill="#1A1A2E" font-weight="600">20–150 MA</text>
+
+  <!-- Row: Co-Sourcing: 80-500 (bright purple band) -->
+  <rect x="481" y="330" width="599" height="55" rx="8" fill="#8719E1" opacity="0.75"/>
+  <text x="780" y="363" text-anchor="middle" font-size="14" fill="white" font-weight="600">80–500 MA</text>
+
+  <!-- Row: Projektbasiert: all sizes (dotted) -->
+  <rect x="200" y="450" width="880" height="55" rx="8" fill="none" stroke="#0A8A87" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="640" y="483" text-anchor="middle" font-size="14" fill="#0A8A87" font-weight="600">Alle Grössen – ergänzend zu anderen Modellen</text>
+
+  <!-- Horizontal grid lines (faint) -->
+  <line x1="200" y1="157" x2="1080" y2="157" stroke="#1A1A2E" stroke-width="1" opacity="0.1"/>
+  <line x1="200" y1="270" x2="1080" y2="270" stroke="#1A1A2E" stroke-width="1" opacity="0.1"/>
+  <line x1="200" y1="395" x2="1080" y2="395" stroke="#1A1A2E" stroke-width="1" opacity="0.1"/>
+  <line x1="200" y1="510" x2="1080" y2="510" stroke="#1A1A2E" stroke-width="1" opacity="0.1"/>
+
+  <!-- Vertical tick marks -->
+  <line x1="376" y1="536" x2="376" y2="544" stroke="#1A1A2E" stroke-width="1.5"/>
+  <line x1="552" y1="536" x2="552" y2="544" stroke="#1A1A2E" stroke-width="1.5"/>
+  <line x1="728" y1="536" x2="728" y2="544" stroke="#1A1A2E" stroke-width="1.5"/>
+  <line x1="904" y1="536" x2="904" y2="544" stroke="#1A1A2E" stroke-width="1.5"/>
+</svg>
