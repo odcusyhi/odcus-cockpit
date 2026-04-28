@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">KI Use Case Priorisierungsmatrix</text>
+
+  <!-- Y axis label -->
+  <text x="38" y="360" text-anchor="middle" font-size="15" fill="#1A1A2E" font-weight="600" transform="rotate(-90,38,360)">Business Value</text>
+  <text x="55" y="530" text-anchor="middle" font-size="12" fill="#888" transform="rotate(-90,55,530)">niedrig</text>
+  <text x="55" y="215" text-anchor="middle" font-size="12" fill="#888" transform="rotate(-90,55,215)">hoch</text>
+
+  <!-- X axis label -->
+  <text x="620" y="610" text-anchor="middle" font-size="15" fill="#1A1A2E" font-weight="600">Implementierungsaufwand</text>
+  <text x="380" y="592" text-anchor="middle" font-size="12" fill="#888">niedrig</text>
+  <text x="860" y="592" text-anchor="middle" font-size="12" fill="#888">hoch</text>
+
+  <!-- Quadrant boxes -->
+  <!-- Top-left: Quick Wins (teal bg) -->
+  <rect x="80" y="75" width="510" height="255" rx="12" fill="#61D2CE" opacity="0.2"/>
+  <rect x="80" y="75" width="510" height="255" rx="12" fill="none" stroke="#61D2CE" stroke-width="2.5"/>
+
+  <!-- Top-right: Strategic Bets (purple bg) -->
+  <rect x="610" y="75" width="510" height="255" rx="12" fill="#590DA0" opacity="0.12"/>
+  <rect x="610" y="75" width="510" height="255" rx="12" fill="none" stroke="#590DA0" stroke-width="2.5"/>
+
+  <!-- Bottom-left: Low-Hanging Fruit (gray) -->
+  <rect x="80" y="350" width="510" height="215" rx="12" fill="#E8E8F0"/>
+  <rect x="80" y="350" width="510" height="215" rx="12" fill="none" stroke="#AAAABC" stroke-width="2"/>
+
+  <!-- Bottom-right: Avoid (light gray, hatched effect) -->
+  <rect x="610" y="350" width="510" height="215" rx="12" fill="#F0EEF5"/>
+  <rect x="610" y="350" width="510" height="215" rx="12" fill="none" stroke="#AAAABC" stroke-width="2" stroke-dasharray="8,5"/>
+
+  <!-- Center dividers -->
+  <line x1="80" y1="330" x2="1120" y2="330" stroke="#1A1A2E" stroke-width="2" opacity="0.2"/>
+  <line x1="590" y1="75" x2="590" y2="565" stroke="#1A1A2E" stroke-width="2" opacity="0.2"/>
+
+  <!-- Top-left content: Quick Wins -->
+  <text x="190" y="130" text-anchor="middle" font-size="22" font-weight="700" fill="#0A8A87">Quick Wins</text>
+  <text x="190" y="157" text-anchor="middle" font-size="22">⚡</text>
+  <!-- START HIER badge -->
+  <rect x="270" y="112" width="130" height="34" rx="8" fill="#0A8A87"/>
+  <text x="335" y="134" text-anchor="middle" font-size="14" font-weight="700" fill="white">START HIER</text>
+  <text x="335" y="182" text-anchor="middle" font-size="13" fill="#0A8A87" opacity="0.85">Hoher Wert · Geringe Komplexität</text>
+  <text x="335" y="205" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.7">Erste 2-3 Projekte umsetzen</text>
+  <text x="335" y="228" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.7">ROI in Wochen messbar</text>
+  <text x="335" y="293" text-anchor="middle" font-size="13" fill="#0A8A87" font-weight="600">Sofort starten</text>
+
+  <!-- Top-right content: Strategic Bets -->
+  <text x="865" y="130" text-anchor="middle" font-size="22" font-weight="700" fill="#590DA0">Strategic Bets</text>
+  <text x="865" y="157" text-anchor="middle" font-size="22">🎯</text>
+  <text x="865" y="193" text-anchor="middle" font-size="13" fill="#590DA0" opacity="0.85">Hoher Wert · Hohe Komplexität</text>
+  <text x="865" y="218" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.7">Vorbereitung braucht Vorlaufzeit</text>
+  <text x="865" y="242" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.7">Erst nach erstem Quick Win</text>
+  <text x="865" y="293" text-anchor="middle" font-size="13" fill="#590DA0" font-weight="600">Planen, nicht sofort starten</text>
+
+  <!-- Bottom-left content: Low-Hanging Fruit -->
+  <text x="335" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="#888">Low-Hanging Fruit</text>
+  <text x="335" y="427" text-anchor="middle" font-size="22">🍎</text>
+  <text x="335" y="462" text-anchor="middle" font-size="13" fill="#888">Geringer Wert · Geringe Komplexität</text>
+  <text x="335" y="486" text-anchor="middle" font-size="13" fill="#888">Nebenbei umsetzen</text>
+  <text x="335" y="533" text-anchor="middle" font-size="13" fill="#888" font-weight="600">Niedrige Priorität</text>
+
+  <!-- Bottom-right content: Avoid -->
+  <text x="865" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="#AAAABC">Avoid</text>
+  <text x="865" y="427" text-anchor="middle" font-size="22">✗</text>
+  <text x="865" y="462" text-anchor="middle" font-size="13" fill="#AAAABC">Geringer Wert · Hohe Komplexität</text>
+  <text x="865" y="486" text-anchor="middle" font-size="13" fill="#AAAABC">Nicht umsetzen</text>
+  <text x="865" y="533" text-anchor="middle" font-size="13" fill="#AAAABC" font-weight="600">Streichen</text>
+</svg>
