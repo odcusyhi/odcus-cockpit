@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">Beispiel: Use Cases eingeordnet</text>
+
+  <!-- Quadrant boxes -->
+  <rect x="80" y="75" width="510" height="255" rx="12" fill="#61D2CE" opacity="0.15"/>
+  <rect x="80" y="75" width="510" height="255" rx="12" fill="none" stroke="#61D2CE" stroke-width="2"/>
+  <rect x="610" y="75" width="510" height="255" rx="12" fill="#590DA0" opacity="0.08"/>
+  <rect x="610" y="75" width="510" height="255" rx="12" fill="none" stroke="#590DA0" stroke-width="2"/>
+  <rect x="80" y="350" width="510" height="215" rx="12" fill="#E8E8F0"/>
+  <rect x="80" y="350" width="510" height="215" rx="12" fill="none" stroke="#AAAABC" stroke-width="1.5"/>
+  <rect x="610" y="350" width="510" height="215" rx="12" fill="#F0EEF5"/>
+  <rect x="610" y="350" width="510" height="215" rx="12" fill="none" stroke="#AAAABC" stroke-width="1.5" stroke-dasharray="8,5"/>
+
+  <!-- Dividers -->
+  <line x1="80" y1="330" x2="1120" y2="330" stroke="#1A1A2E" stroke-width="2" opacity="0.2"/>
+  <line x1="590" y1="75" x2="590" y2="565" stroke="#1A1A2E" stroke-width="2" opacity="0.2"/>
+
+  <!-- Axis labels -->
+  <text x="38" y="360" text-anchor="middle" font-size="14" fill="#1A1A2E" font-weight="600" transform="rotate(-90,38,360)">Business Value</text>
+  <text x="610" y="608" text-anchor="middle" font-size="14" fill="#1A1A2E" font-weight="600">Implementierungsaufwand</text>
+  <text x="380" y="592" text-anchor="middle" font-size="12" fill="#888">niedrig</text>
+  <text x="860" y="592" text-anchor="middle" font-size="12" fill="#888">hoch</text>
+
+  <!-- Quadrant titles -->
+  <text x="335" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#0A8A87">Quick Wins ⚡</text>
+  <text x="865" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#590DA0">Strategic Bets 🎯</text>
+  <text x="335" y="380" text-anchor="middle" font-size="16" font-weight="700" fill="#888">Low-Hanging Fruit 🍎</text>
+  <text x="865" y="380" text-anchor="middle" font-size="16" font-weight="700" fill="#AAAABC">Avoid ✗</text>
+
+  <!-- Quick Wins pills -->
+  <rect x="100" y="125" width="200" height="36" rx="18" fill="#0A8A87"/>
+  <text x="200" y="148" text-anchor="middle" font-size="13" font-weight="600" fill="white">E-Mail Drafting</text>
+
+  <rect x="310" y="125" width="230" height="36" rx="18" fill="#0A8A87"/>
+  <text x="425" y="148" text-anchor="middle" font-size="13" font-weight="600" fill="white">Meeting Summaries</text>
+
+  <rect x="100" y="178" width="200" height="36" rx="18" fill="#61D2CE"/>
+  <text x="200" y="201" text-anchor="middle" font-size="13" font-weight="600" fill="#1A1A2E">Dokumenten-Routing</text>
+
+  <rect x="310" y="178" width="240" height="36" rx="18" fill="#61D2CE"/>
+  <text x="430" y="201" text-anchor="middle" font-size="13" font-weight="600" fill="#1A1A2E">Übersetzungsautomatisierung</text>
+
+  <rect x="100" y="231" width="180" height="36" rx="18" fill="#61D2CE" opacity="0.7"/>
+  <text x="190" y="254" text-anchor="middle" font-size="13" font-weight="600" fill="#1A1A2E">FAQ Chatbot</text>
+
+  <!-- Strategic Bets pills -->
+  <rect x="630" y="125" width="240" height="36" rx="18" fill="#590DA0"/>
+  <text x="750" y="148" text-anchor="middle" font-size="13" font-weight="600" fill="white">Predictive Maintenance</text>
+
+  <rect x="880" y="125" width="210" height="36" rx="18" fill="#590DA0"/>
+  <text x="985" y="148" text-anchor="middle" font-size="13" font-weight="600" fill="white">KI-Finanzprognosen</text>
+
+  <rect x="630" y="178" width="270" height="36" rx="18" fill="#8719E1" opacity="0.8"/>
+  <text x="765" y="201" text-anchor="middle" font-size="13" font-weight="600" fill="white">Personalisierte Kundenansprache</text>
+
+  <rect x="630" y="231" width="230" height="36" rx="18" fill="#8719E1" opacity="0.6"/>
+  <text x="745" y="254" text-anchor="middle" font-size="13" font-weight="600" fill="white">Bedarfsprognose Einkauf</text>
+
+  <!-- Low-Hanging Fruit pills -->
+  <rect x="100" y="400" width="210" height="36" rx="18" fill="#BBBBC8"/>
+  <text x="205" y="423" text-anchor="middle" font-size="13" font-weight="600" fill="#555">Auto-Kategorisierung</text>
+
+  <rect x="320" y="400" width="240" height="36" rx="18" fill="#BBBBC8"/>
+  <text x="440" y="423" text-anchor="middle" font-size="13" font-weight="600" fill="#555">Automatische Terminplanung</text>
+
+  <!-- Avoid pills (grayed out with strikethrough) -->
+  <rect x="630" y="400" width="200" height="36" rx="18" fill="#E0DDE8"/>
+  <text x="730" y="420" text-anchor="middle" font-size="12" fill="#AAAABC" font-weight="600">Eigenes LLM trainieren</text>
+  <line x1="645" y1="418" x2="815" y2="418" stroke="#AAAABC" stroke-width="1.5"/>
+
+  <rect x="840" y="400" width="260" height="36" rx="18" fill="#E0DDE8"/>
+  <text x="970" y="420" text-anchor="middle" font-size="12" fill="#AAAABC" font-weight="600">Vollautomatisierte Kundenentscheide</text>
+  <line x1="855" y1="418" x2="1085" y2="418" stroke="#AAAABC" stroke-width="1.5"/>
+</svg>
