@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><defs><style>text { font-family: Inter,Arial,Helvetica,sans-serif; }</style></defs><rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+<text x="600" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A2E">Von der Black Box zur Kostentransparenz</text>
+<defs><marker id="arrowR3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0,0 10,3.5 0,7" fill="#590DA0"/></marker></defs>
+<line x1="430" y1="320" x2="568" y2="320" stroke="#590DA0" stroke-width="3" marker-end="url(#arrowR3)"/>
+<rect x="80" y="175" width="320" height="290" fill="#1A1A2E" rx="12"/>
+<text x="240" y="300" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">IT Budget</text>
+<text x="240" y="332" text-anchor="middle" font-size="28" font-weight="700" fill="#61D2CE">CHF 2.5M</text>
+<text x="130" y="218" font-size="28" fill="#9B9BB4" opacity="0.45">?</text>
+<text x="322" y="208" font-size="22" fill="#9B9BB4" opacity="0.38">?</text>
+<text x="110" y="415" font-size="22" fill="#9B9BB4" opacity="0.30">?</text>
+<text x="330" y="430" font-size="28" fill="#9B9BB4" opacity="0.40">?</text>
+<text x="200" y="440" font-size="18" fill="#9B9BB4" opacity="0.32">?</text>
+<circle cx="850" cy="315" r="155" fill="#E8E8F0"/>
+<path d="M850,315 L1005,315 A155,155 0 0,1 773,451 Z" fill="#61D2CE" opacity="0.9"/>
+<path d="M850,315 L773,451 A155,155 0 0,1 700,160 Z" fill="#590DA0" opacity="0.9"/>
+<path d="M850,315 L700,160 A155,155 0 0,1 928,160 Z" fill="#8719E1" opacity="0.9"/>
+<path d="M850,315 L928,160 A155,155 0 0,1 1005,315 Z" fill="#F0E8FF" opacity="0.9" stroke="#E0D9F5" stroke-width="1"/>
+<circle cx="850" cy="315" r="82" fill="#F8F7FF"/>
+<text x="850" y="308" text-anchor="middle" font-size="13" font-weight="700" fill="#1A1A2E">CHF 2.5M</text>
+<text x="850" y="328" text-anchor="middle" font-size="11" fill="#4A4A6A">allokiert</text>
+<rect x="620" y="510" width="14" height="14" fill="#61D2CE" rx="2"/>
+<text x="641" y="522" font-size="12" fill="#4A4A6A">Operations 40%</text>
+<rect x="762" y="510" width="14" height="14" fill="#590DA0" rx="2"/>
+<text x="783" y="522" font-size="12" fill="#4A4A6A">Sales 30%</text>
+<rect x="890" y="510" width="14" height="14" fill="#8719E1" rx="2"/>
+<text x="911" y="522" font-size="12" fill="#4A4A6A">R&amp;D 20%</text>
+<rect x="1000" y="510" width="14" height="14" fill="#F0E8FF" stroke="#E0D9F5" stroke-width="1" rx="2"/>
+<text x="1021" y="522" font-size="12" fill="#4A4A6A">Shared 10%</text>
+<text x="600" y="590" text-anchor="middle" font-size="13" fill="#4A4A6A">Kostentransparenz schafft Verantwortung — ohne sie trägt niemand die IT-Kosten bewusst</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><defs><style>text { font-family: Inter,Arial,Helvetica,sans-serif; }</style></defs><rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+<text x="600" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A2E">IT-Reifegrad: Die vier Stufen</text>
+<rect x="60" y="430" width="240" height="140" fill="#E8E8F0" rx="8"/>
+<rect x="60" y="418" width="240" height="22" fill="#C0C0D0" rx="4"/>
+<circle cx="180" cy="398" r="22" fill="#C0C0D0"/>
+<text x="180" y="406" text-anchor="middle" font-size="20" font-weight="700" fill="#4A4A6A">!</text>
+<text x="180" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#4A4A6A">Level 1</text>
+<text x="180" y="488" text-anchor="middle" font-size="16" font-weight="700" fill="#1A1A2E">Chaos</text>
+<text x="180" y="511" text-anchor="middle" font-size="12" fill="#4A4A6A">Reaktiv, undokumentiert</text>
+<rect x="310" y="350" width="240" height="220" fill="#F0E8FF" rx="8"/>
+<rect x="310" y="338" width="240" height="22" fill="#C8B8E8" rx="4"/>
+<circle cx="430" cy="318" r="22" fill="#C8B8E8"/>
+<text x="430" y="326" text-anchor="middle" font-size="18" fill="#590DA0">~</text>
+<text x="430" y="388" text-anchor="middle" font-size="15" font-weight="700" fill="#590DA0">Level 2</text>
+<text x="430" y="411" text-anchor="middle" font-size="16" font-weight="700" fill="#1A1A2E">Grundlegend</text>
+<text x="430" y="434" text-anchor="middle" font-size="12" fill="#4A4A6A">Prozesse vorhanden,</text>
+<text x="430" y="452" text-anchor="middle" font-size="12" fill="#4A4A6A">nicht standardisiert</text>
+<rect x="560" y="260" width="240" height="310" fill="#590DA0" rx="8"/>
+<rect x="560" y="248" width="240" height="22" fill="#4A1888" rx="4"/>
+<circle cx="680" cy="228" r="22" fill="#4A1888"/>
+<text x="680" y="236" text-anchor="middle" font-size="18" fill="#FFFFFF">&#x2713;</text>
+<text x="680" y="298" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Level 3</text>
+<text x="680" y="321" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Standardisiert</text>
+<text x="680" y="344" text-anchor="middle" font-size="12" fill="#F0E8FF">IT Policies, SLAs,</text>
+<text x="680" y="362" text-anchor="middle" font-size="12" fill="#F0E8FF">aktives Monitoring</text>
+<rect x="810" y="160" width="240" height="410" fill="#61D2CE" rx="8"/>
+<rect x="810" y="148" width="240" height="22" fill="#3EB5B1" rx="4"/>
+<circle cx="930" cy="128" r="22" fill="#3EB5B1"/>
+<text x="930" y="136" text-anchor="middle" font-size="18" fill="#1A1A2E">&#x2605;</text>
+<text x="930" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#1A1A2E">Level 4</text>
+<text x="930" y="221" text-anchor="middle" font-size="16" font-weight="700" fill="#1A1A2E">Optimierend</text>
+<text x="930" y="244" text-anchor="middle" font-size="12" fill="#1A1A2E">Kontinuierliche</text>
+<text x="930" y="262" text-anchor="middle" font-size="12" fill="#1A1A2E">Verbesserung, KPIs</text>
+<text x="600" y="600" text-anchor="middle" font-size="13" fill="#4A4A6A">Die meisten KMU sind zwischen Level 2 und 3 — die Lücke zu Level 4 entsteht oft durch fehlende Strategie</text>
+</svg>

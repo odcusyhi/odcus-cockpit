@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><defs><style>text { font-family: Inter,Arial,Helvetica,sans-serif; }</style></defs><rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+<text x="600" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A2E">Von der Kostenstelle zum Strategischen Asset</text>
+<line x1="600" y1="75" x2="600" y2="590" stroke="#E0D9F5" stroke-width="2"/>
+<rect x="60" y="75" width="510" height="515" fill="#E8E8F0" rx="8"/>
+<rect x="60" y="75" width="510" height="50" fill="#D0D0E0" rx="8"/>
+<text x="315" y="108" text-anchor="middle" font-size="17" font-weight="700" fill="#4A4A6A">FRÜHER</text>
+<rect x="100" y="145" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="130" y="168" font-size="14" fill="#4A4A6A">Umsatz</text><text x="490" y="168" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 12.4M</text>
+<rect x="100" y="190" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="130" y="213" font-size="14" fill="#4A4A6A">Personal</text><text x="490" y="213" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 6.2M</text>
+<rect x="100" y="235" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="130" y="258" font-size="14" fill="#4A4A6A">Miete / Infrastruktur</text><text x="490" y="258" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 800k</text>
+<rect x="100" y="280" width="430" height="44" fill="#FFE8E8" rx="4" stroke="#E05050" stroke-width="2"/>
+<text x="130" y="307" font-size="15" font-weight="700" fill="#C03030">IT-Kosten</text>
+<text x="490" y="307" text-anchor="end" font-size="15" font-weight="700" fill="#C03030">CHF 480k ↓</text>
+<rect x="100" y="333" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="130" y="356" font-size="14" fill="#4A4A6A">Sonstiges</text><text x="490" y="356" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 320k</text>
+<rect x="140" y="430" width="350" height="48" fill="#E0D0D0" rx="6"/>
+<text x="315" y="450" text-anchor="middle" font-size="13" fill="#804040">IT = Ausgabenposten</text>
+<text x="315" y="469" text-anchor="middle" font-size="13" fill="#804040">Frage: Können wir das senken?</text>
+<rect x="630" y="75" width="510" height="515" fill="#F0E8FF" rx="8"/>
+<rect x="630" y="75" width="510" height="50" fill="#590DA0" rx="8"/>
+<text x="885" y="108" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">HEUTE</text>
+<rect x="670" y="145" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="700" y="168" font-size="14" fill="#4A4A6A">Umsatz</text><text x="1060" y="168" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 12.4M</text>
+<rect x="670" y="190" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="700" y="213" font-size="14" fill="#4A4A6A">Personal</text><text x="1060" y="213" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 6.2M</text>
+<rect x="670" y="235" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="700" y="258" font-size="14" fill="#4A4A6A">Miete / Infrastruktur</text><text x="1060" y="258" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 800k</text>
+<rect x="670" y="280" width="430" height="44" fill="#E0FFF8" rx="4" stroke="#61D2CE" stroke-width="2"/>
+<text x="700" y="307" font-size="15" font-weight="700" fill="#006060">IT → Wettbewerbsvorteil</text>
+<text x="1060" y="307" text-anchor="end" font-size="15" font-weight="700" fill="#006060">CHF 480k ↑</text>
+<rect x="670" y="333" width="430" height="36" fill="#FFFFFF" rx="4"/>
+<text x="700" y="356" font-size="14" fill="#4A4A6A">Sonstiges</text><text x="1060" y="356" text-anchor="end" font-size="14" fill="#4A4A6A">CHF 320k</text>
+<rect x="710" y="430" width="350" height="48" fill="#61D2CE" rx="6"/>
+<text x="885" y="450" text-anchor="middle" font-size="13" fill="#FFFFFF">IT = Strategisches Asset</text>
+<text x="885" y="469" text-anchor="middle" font-size="13" fill="#FFFFFF">Frage: Was ermöglicht es uns?</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><defs><style>text { font-family: Inter,Arial,Helvetica,sans-serif; }</style></defs><rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+<text x="600" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A2E">Drei-Phasen Implementierung</text>
+<text x="600" y="76" text-anchor="middle" font-size="14" fill="#4A4A6A">Von der Datenbasis bis zum Chargeback — pragmatisch und in Reihenfolge</text>
+<line x1="100" y1="310" x2="1095" y2="310" stroke="#E0D9F5" stroke-width="3"/>
+<polygon points="1095,303 1110,310 1095,317" fill="#E0D9F5"/>
+<circle cx="270" cy="310" r="14" fill="#590DA0" stroke="#FFFFFF" stroke-width="3"/>
+<circle cx="620" cy="310" r="14" fill="#61D2CE" stroke="#FFFFFF" stroke-width="3"/>
+<circle cx="960" cy="310" r="14" fill="#8719E1" stroke="#FFFFFF" stroke-width="3"/>
+<text x="100" y="345" text-anchor="middle" font-size="11" fill="#9B9BB4">Monat 0</text>
+<text x="270" y="345" text-anchor="middle" font-size="11" fill="#9B9BB4">Monat 1</text>
+<text x="620" y="345" text-anchor="middle" font-size="11" fill="#9B9BB4">Monat 3</text>
+<text x="960" y="345" text-anchor="middle" font-size="11" fill="#9B9BB4">Monat 9+</text>
+<rect x="100" y="118" width="340" height="170" fill="#F0E8FF" rx="10" stroke="#590DA0" stroke-width="2"/>
+<rect x="100" y="118" width="340" height="44" fill="#590DA0" rx="10"/>
+<text x="270" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Phase 1 — Monat 1–3</text>
+<rect x="172" y="104" width="96" height="22" fill="#61D2CE" rx="11"/>
+<text x="220" y="119" text-anchor="middle" font-size="11" font-weight="700" fill="#1A1A2E">Quick Win</text>
+<text x="270" y="192" text-anchor="middle" font-size="15" font-weight="700" fill="#590DA0">Data Foundation</text>
+<text x="270" y="215" text-anchor="middle" font-size="12" fill="#4A4A6A">Kosten erfassen und kategorisieren</text>
+<text x="270" y="235" text-anchor="middle" font-size="12" fill="#4A4A6A">Dashboards aufbauen</text>
+<line x1="270" y1="288" x2="270" y2="296" stroke="#590DA0" stroke-width="2"/>
+<rect x="450" y="118" width="340" height="170" fill="#E8FFFE" rx="10" stroke="#61D2CE" stroke-width="2"/>
+<rect x="450" y="118" width="340" height="44" fill="#61D2CE" rx="10"/>
+<text x="620" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#1A1A2E">Phase 2 — Monat 4–9</text>
+<text x="620" y="192" text-anchor="middle" font-size="15" font-weight="700" fill="#006060">Showback</text>
+<text x="620" y="215" text-anchor="middle" font-size="12" fill="#4A4A6A">Abteilungen sehen IT-Kosten</text>
+<text x="620" y="235" text-anchor="middle" font-size="12" fill="#4A4A6A">Kein Druck, nur Sichtbarkeit</text>
+<line x1="620" y1="288" x2="620" y2="296" stroke="#61D2CE" stroke-width="2"/>
+<rect x="800" y="118" width="340" height="170" fill="#F3EAFF" rx="10" stroke="#8719E1" stroke-width="2"/>
+<rect x="800" y="118" width="340" height="44" fill="#8719E1" rx="10"/>
+<text x="970" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Phase 3 — ab Monat 10</text>
+<text x="970" y="192" text-anchor="middle" font-size="15" font-weight="700" fill="#8719E1">Chargeback</text>
+<text x="970" y="215" text-anchor="middle" font-size="12" fill="#4A4A6A">Top-Kostentreiber verrechnen</text>
+<text x="970" y="235" text-anchor="middle" font-size="12" fill="#4A4A6A">Graduell, nicht alles auf einmal</text>
+<line x1="960" y1="288" x2="960" y2="296" stroke="#8719E1" stroke-width="2"/>
+<rect x="200" y="390" width="800" height="52" fill="#1A1A2E" rx="8"/>
+<text x="600" y="411" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Reihenfolge entscheidet</text>
+<text x="600" y="431" text-anchor="middle" font-size="13" fill="#9B9BB4">Wer zu früh auf Chargeback wechselt, riskiert politischen Widerstand — Sichtbarkeit zuerst</text>
+</svg>

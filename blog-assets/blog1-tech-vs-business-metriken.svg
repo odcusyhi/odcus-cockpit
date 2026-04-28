@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><defs><style>text { font-family: Inter,Arial,Helvetica,sans-serif; }</style></defs><rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+<text x="600" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A2E">Die Übersetzung, die zählt</text>
+<text x="600" y="76" text-anchor="middle" font-size="14" fill="#4A4A6A">Gleiche IT-Kennzahl — zwei verschiedene Sprachen</text>
+<text x="220" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#9B9BB4">TECHNISCHE METRIK</text>
+<text x="920" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#590DA0">BUSINESS-METRIK</text>
+<rect x="60" y="132" width="450" height="100" fill="#E8E8F0" rx="8"/>
+<text x="285" y="173" text-anchor="middle" font-size="22" font-weight="700" fill="#4A4A6A">99.9% Uptime</text>
+<text x="285" y="203" text-anchor="middle" font-size="13" fill="#9B9BB4">SLA-Kennzahl</text>
+<text x="560" y="188" text-anchor="middle" font-size="28" fill="#590DA0">→</text>
+<rect x="630" y="132" width="510" height="100" fill="#F0E8FF" rx="8" stroke="#590DA0" stroke-width="2"/>
+<text x="885" y="170" text-anchor="middle" font-size="16" font-weight="700" fill="#590DA0">Max. 8.7h Ausfall / Jahr</text>
+<text x="885" y="196" text-anchor="middle" font-size="14" fill="#4A4A6A">= CHF 43k Risiko bei CHF 5k/h Umsatzausfall</text>
+<rect x="60" y="255" width="450" height="100" fill="#E8E8F0" rx="8"/>
+<text x="285" y="296" text-anchor="middle" font-size="22" font-weight="700" fill="#4A4A6A">MTTR 4h</text>
+<text x="285" y="326" text-anchor="middle" font-size="13" fill="#9B9BB4">Mean Time to Recover</text>
+<text x="560" y="311" text-anchor="middle" font-size="28" fill="#61D2CE">→</text>
+<rect x="630" y="255" width="510" height="100" fill="#E8FFFE" rx="8" stroke="#61D2CE" stroke-width="2"/>
+<text x="885" y="293" text-anchor="middle" font-size="16" font-weight="700" fill="#006060">Jeder Incident kostet</text>
+<text x="885" y="319" text-anchor="middle" font-size="14" fill="#4A4A6A">durchschnittlich CHF 8k (Direkt + Opportunität)</text>
+<rect x="60" y="378" width="450" height="100" fill="#E8E8F0" rx="8"/>
+<text x="285" y="415" text-anchor="middle" font-size="20" font-weight="700" fill="#4A4A6A">Patch compliance 94%</text>
+<text x="285" y="448" text-anchor="middle" font-size="13" fill="#9B9BB4">Security-Metrik</text>
+<text x="560" y="434" text-anchor="middle" font-size="28" fill="#8719E1">→</text>
+<rect x="630" y="378" width="510" height="100" fill="#F3EAFF" rx="8" stroke="#8719E1" stroke-width="2"/>
+<text x="885" y="415" text-anchor="middle" font-size="14" font-weight="700" fill="#8719E1">6% ungepatchte Systeme</text>
+<text x="885" y="440" text-anchor="middle" font-size="13" fill="#4A4A6A">= 3 bekannte CVEs mit kritischem CVSS-Score</text>
+<rect x="200" y="518" width="800" height="52" fill="#590DA0" rx="8"/>
+<text x="600" y="538" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Gleiche Massnahme. Andere Sprache.</text>
+<text x="600" y="558" text-anchor="middle" font-size="13" fill="#F0E8FF">Die Metrik entscheidet, ob IT als Kostenstelle oder Wertschöpfer wahrgenommen wird.</text>
+</svg>
