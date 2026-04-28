@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">EU AI Act: Was wann gilt</text>
+
+  <!-- Timeline axis -->
+  <line x1="120" y1="300" x2="1080" y2="300" stroke="#1A1A2E" stroke-width="3"/>
+  <!-- Arrow -->
+  <polygon points="1072,293 1090,300 1072,307" fill="#1A1A2E"/>
+
+  <!-- Point 1: Aug 2024 -->
+  <circle cx="240" cy="300" r="22" fill="#590DA0"/>
+  <text x="240" y="306" text-anchor="middle" font-size="13" font-weight="700" fill="white">1</text>
+  <text x="240" y="258" text-anchor="middle" font-size="16" font-weight="700" fill="#590DA0">Aug 2024</text>
+  <text x="240" y="278" text-anchor="middle" font-size="13" fill="#1A1A2E">AI Act</text>
+  <text x="240" y="295" text-anchor="middle" font-size="13" fill="#1A1A2E">in Kraft</text>
+  <!-- Description below -->
+  <text x="240" y="348" text-anchor="middle" font-size="13" fill="#888">Veröffentlichung</text>
+  <text x="240" y="366" text-anchor="middle" font-size="13" fill="#888">im EU-Amtsblatt</text>
+
+  <!-- Point 2: Sofort / Art. 4 -->
+  <circle cx="480" cy="300" r="28" fill="#61D2CE"/>
+  <text x="480" y="295" text-anchor="middle" font-size="12" font-weight="700" fill="#1A1A2E">Art. 4</text>
+  <text x="480" y="311" text-anchor="middle" font-size="12" font-weight="700" fill="#1A1A2E">Sofort</text>
+  <text x="480" y="258" text-anchor="middle" font-size="16" font-weight="700" fill="#0A8A87">Sofort</text>
+  <text x="480" y="278" text-anchor="middle" font-size="13" fill="#1A1A2E">Schulungs-</text>
+  <text x="480" y="295" text-anchor="middle" font-size="13" fill="#1A1A2E">pflicht</text>
+  <!-- Description below -->
+  <text x="480" y="348" text-anchor="middle" font-size="13" fill="#888">Artikel 4: AI Literacy</text>
+  <text x="480" y="366" text-anchor="middle" font-size="13" fill="#888">gilt für alle sofort</text>
+
+  <!-- Point 3: Feb 2025 -->
+  <circle cx="680" cy="300" r="16" fill="#1A1A2E" opacity="0.6"/>
+  <text x="680" y="258" text-anchor="middle" font-size="15" font-weight="600" fill="#1A1A2E">Feb 2025</text>
+  <text x="680" y="278" text-anchor="middle" font-size="13" fill="#1A1A2E">GPAI-Regeln</text>
+  <!-- Description below -->
+  <text x="680" y="340" text-anchor="middle" font-size="13" fill="#888">General Purpose AI</text>
+  <text x="680" y="358" text-anchor="middle" font-size="13" fill="#888">Obligations</text>
+
+  <!-- Point 4: Aug 2026 -->
+  <circle cx="920" cy="300" r="34" fill="#8719E1"/>
+  <text x="920" y="295" text-anchor="middle" font-size="12" font-weight="700" fill="white">High-</text>
+  <text x="920" y="311" text-anchor="middle" font-size="12" font-weight="700" fill="white">Risk</text>
+  <text x="920" y="252" text-anchor="middle" font-size="16" font-weight="700" fill="#8719E1">Aug 2026</text>
+  <text x="920" y="274" text-anchor="middle" font-size="13" fill="#1A1A2E">High-Risk AI</text>
+  <text x="920" y="291" text-anchor="middle" font-size="13" fill="#1A1A2E">vollständig</text>
+  <!-- Description below -->
+  <text x="920" y="354" text-anchor="middle" font-size="13" fill="#888">Alle Pflichten für</text>
+  <text x="920" y="372" text-anchor="middle" font-size="13" fill="#888">High-Risk-Systeme aktiv</text>
+
+  <!-- Callout box: "Für die meisten KMUs gilt Artikel 4 JETZT" -->
+  <rect x="320" y="420" width="560" height="90" rx="12" fill="#590DA0"/>
+  <!-- Arrow from callout to Art.4 point -->
+  <line x1="480" y1="420" x2="480" y2="335" stroke="#590DA0" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="474,338 480,326 486,338" fill="#590DA0"/>
+  <text x="600" y="460" text-anchor="middle" font-size="18" font-weight="700" fill="white">Für die meisten KMUs gilt Artikel 4</text>
+  <text x="600" y="490" text-anchor="middle" font-size="22" font-weight="700" fill="#61D2CE">JETZT</text>
+
+  <!-- Timeline labels: connecting lines from points to text above -->
+  <line x1="240" y1="278" x2="240" y2="278" stroke="#590DA0" stroke-width="1.5"/>
+  <line x1="480" y1="272" x2="480" y2="272" stroke="#0A8A87" stroke-width="1.5"/>
+</svg>
