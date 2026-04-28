@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">Capability Gap: Legacy vs. Markt</text>
+
+  <!-- Chart area -->
+  <!-- Y axis -->
+  <line x1="130" y1="80" x2="130" y2="530" stroke="#1A1A2E" stroke-width="2" opacity="0.4"/>
+  <!-- X axis -->
+  <line x1="130" y1="530" x2="1100" y2="530" stroke="#1A1A2E" stroke-width="2" opacity="0.4"/>
+
+  <!-- Y axis label -->
+  <text x="42" y="310" text-anchor="middle" font-size="14" fill="#1A1A2E" font-weight="600" transform="rotate(-90,42,310)">Capability</text>
+  <text x="100" y="100" text-anchor="end" font-size="12" fill="#888">hoch</text>
+  <text x="100" y="530" text-anchor="end" font-size="12" fill="#888">niedrig</text>
+
+  <!-- X axis labels (years) -->
+  <text x="200" y="555" text-anchor="middle" font-size="13" fill="#888">2020</text>
+  <text x="390" y="555" text-anchor="middle" font-size="13" fill="#888">2021</text>
+  <text x="580" y="555" text-anchor="middle" font-size="13" fill="#888">2022</text>
+  <text x="770" y="555" text-anchor="middle" font-size="13" fill="#888">2023</text>
+  <text x="960" y="555" text-anchor="middle" font-size="13" fill="#888">2024</text>
+  <text x="1100" y="555" text-anchor="middle" font-size="13" fill="#888">2026</text>
+
+  <!-- Opportunity cost zone (teal fill, low opacity) -->
+  <!-- Polygon: legacy line then market line reversed -->
+  <polygon points="200,430 390,435 580,440 770,445 960,450 1100,455   1100,220 960,260 770,310 580,360 390,400 200,420" fill="#61D2CE" opacity="0.18"/>
+
+  <!-- Line 1: Legacy System Capabilities (gray, flat/slightly declining) -->
+  <polyline points="200,430 390,435 580,440 770,445 960,450 1100,455" fill="none" stroke="#888" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- Line 2: Markt / Wettbewerber (purple, rising) -->
+  <polyline points="200,420 390,400 580,360 770,310 960,260 1100,220" fill="none" stroke="#590DA0" stroke-width="3.5"/>
+
+  <!-- Legend -->
+  <line x1="155" y1="110" x2="200" y2="110" stroke="#888" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="210" y="115" font-size="14" fill="#888">Legacy System Capabilities</text>
+
+  <line x1="155" y1="140" x2="200" y2="140" stroke="#590DA0" stroke-width="3.5"/>
+  <text x="210" y="145" font-size="14" fill="#590DA0">Markt / Wettbewerber</text>
+
+  <rect x="155" y="162" width="22" height="14" rx="3" fill="#61D2CE" opacity="0.45"/>
+  <text x="185" y="174" font-size="14" fill="#0A8A87">Opportunitätskosten-Zone</text>
+
+  <!-- Arrows showing gap widening -->
+  <line x1="1100" y1="220" x2="1100" y2="455" stroke="#8719E1" stroke-width="2" stroke-dasharray="5,3" opacity="0.5"/>
+  <polygon points="1094,225 1100,210 1106,225" fill="#8719E1" opacity="0.5"/>
+  <polygon points="1094,450 1100,465 1106,450" fill="#8719E1" opacity="0.5"/>
+
+  <!-- Callout: "Die Lücke wächst jedes Jahr" -->
+  <rect x="820" y="300" width="260" height="55" rx="10" fill="#590DA0"/>
+  <text x="950" y="325" text-anchor="middle" font-size="14" font-weight="700" fill="white">Die Lücke wächst</text>
+  <text x="950" y="345" text-anchor="middle" font-size="14" font-weight="700" fill="#61D2CE">jedes Jahr</text>
+  <!-- Arrow from callout to gap zone -->
+  <line x1="950" y1="355" x2="1050" y2="380" stroke="#590DA0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="1046,374 1058,385 1042,385" fill="#590DA0"/>
+
+  <!-- Data point markers on market line -->
+  <circle cx="200" cy="420" r="5" fill="#590DA0"/>
+  <circle cx="390" cy="400" r="5" fill="#590DA0"/>
+  <circle cx="580" cy="360" r="5" fill="#590DA0"/>
+  <circle cx="770" cy="310" r="5" fill="#590DA0"/>
+  <circle cx="960" cy="260" r="5" fill="#590DA0"/>
+  <circle cx="1100" cy="220" r="6" fill="#590DA0"/>
+
+  <!-- Data point markers on legacy line -->
+  <circle cx="200" cy="430" r="4" fill="#888"/>
+  <circle cx="390" cy="435" r="4" fill="#888"/>
+  <circle cx="580" cy="440" r="4" fill="#888"/>
+  <circle cx="770" cy="445" r="4" fill="#888"/>
+  <circle cx="960" cy="450" r="4" fill="#888"/>
+  <circle cx="1100" cy="455" r="4" fill="#888"/>
+
+  <!-- Y axis ticks -->
+  <line x1="125" y1="200" x2="135" y2="200" stroke="#888" stroke-width="1.5"/>
+  <line x1="125" y1="300" x2="135" y2="300" stroke="#888" stroke-width="1.5"/>
+  <line x1="125" y1="400" x2="135" y2="400" stroke="#888" stroke-width="1.5"/>
+</svg>
