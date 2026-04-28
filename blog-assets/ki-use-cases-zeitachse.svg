@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter,Arial,Helvetica,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#1A1A2E">Quick Win vs. Complex Bet: Zeitachse</text>
+
+  <!-- === TOP TIMELINE: Quick Win – Meeting Summaries === -->
+  <text x="200" y="110" font-size="16" font-weight="700" fill="#0A8A87">Quick Win — Meeting Summaries</text>
+
+  <!-- Timeline bar (teal) -->
+  <rect x="200" y="125" width="920" height="22" rx="11" fill="#61D2CE" opacity="0.3"/>
+
+  <!-- Milestone 1: Wk1 Deploy -->
+  <circle cx="200" cy="136" r="12" fill="#61D2CE"/>
+  <text x="200" y="141" text-anchor="middle" font-size="9" font-weight="700" fill="#1A1A2E">W1</text>
+  <rect x="155" y="163" width="90" height="28" rx="6" fill="#61D2CE" opacity="0.8"/>
+  <text x="200" y="182" text-anchor="middle" font-size="12" fill="#1A1A2E" font-weight="600">Deploy</text>
+
+  <!-- Milestone 2: Wk3 Training -->
+  <circle cx="430" cy="136" r="12" fill="#0A8A87"/>
+  <text x="430" y="141" text-anchor="middle" font-size="9" font-weight="700" fill="white">W3</text>
+  <rect x="385" y="163" width="90" height="28" rx="6" fill="#0A8A87" opacity="0.8"/>
+  <text x="430" y="182" text-anchor="middle" font-size="12" fill="white" font-weight="600">Training</text>
+
+  <!-- Milestone 3: Wk6 Erster ROI -->
+  <circle cx="660" cy="136" r="16" fill="#590DA0"/>
+  <text x="660" y="141" text-anchor="middle" font-size="9" font-weight="700" fill="white">W6</text>
+  <rect x="600" y="163" width="120" height="28" rx="6" fill="#590DA0"/>
+  <text x="660" y="182" text-anchor="middle" font-size="12" fill="white" font-weight="700">✓ Erster ROI</text>
+
+  <!-- Milestone 4: M3 Next -->
+  <circle cx="920" cy="136" r="12" fill="#8719E1"/>
+  <text x="920" y="141" text-anchor="middle" font-size="9" font-weight="700" fill="white">M3</text>
+  <rect x="875" y="163" width="90" height="28" rx="6" fill="#8719E1" opacity="0.8"/>
+  <text x="920" y="182" text-anchor="middle" font-size="12" fill="white" font-weight="600">Nächster UC</text>
+
+  <!-- === BOTTOM TIMELINE: Complex Bet – Predictive Maintenance === -->
+  <text x="200" y="285" font-size="16" font-weight="700" fill="#888">Complex Bet — Predictive Maintenance</text>
+
+  <!-- Timeline bar (gray) -->
+  <rect x="200" y="300" width="920" height="22" rx="11" fill="#BBBBC8" opacity="0.4"/>
+
+  <!-- Milestone M1: Analyse -->
+  <circle cx="200" cy="311" r="12" fill="#BBBBC8"/>
+  <text x="200" y="316" text-anchor="middle" font-size="9" font-weight="700" fill="#1A1A2E">M1</text>
+  <rect x="155" y="338" width="90" height="28" rx="6" fill="#BBBBC8" opacity="0.7"/>
+  <text x="200" y="357" text-anchor="middle" font-size="12" fill="#888" font-weight="600">Analyse</text>
+
+  <!-- Milestone M4: Daten -->
+  <circle cx="505" cy="311" r="12" fill="#AAAABC"/>
+  <text x="505" y="316" text-anchor="middle" font-size="9" font-weight="700" fill="#888">M4</text>
+  <rect x="460" y="338" width="90" height="28" rx="6" fill="#AAAABC" opacity="0.6"/>
+  <text x="505" y="357" text-anchor="middle" font-size="12" fill="#888" font-weight="600">Daten</text>
+
+  <!-- Milestone M9: MVP -->
+  <circle cx="810" cy="311" r="12" fill="#AAAABC" opacity="0.7"/>
+  <text x="810" y="316" text-anchor="middle" font-size="9" font-weight="700" fill="#888">M9</text>
+  <rect x="765" y="338" width="90" height="28" rx="6" fill="#AAAABC" opacity="0.4"/>
+  <text x="810" y="357" text-anchor="middle" font-size="12" fill="#888" font-weight="600">MVP</text>
+
+  <!-- Milestone M18: ROI? -->
+  <circle cx="1120" cy="311" r="14" fill="#888" opacity="0.5"/>
+  <text x="1120" y="316" text-anchor="middle" font-size="9" font-weight="700" fill="#666">M18</text>
+  <rect x="1065" y="338" width="110" height="28" rx="6" fill="#888" opacity="0.3"/>
+  <text x="1120" y="357" text-anchor="middle" font-size="12" fill="#888" font-weight="600">ROI?</text>
+
+  <!-- Callout box: "12x schneller zum ersten messbaren Ergebnis" -->
+  <rect x="200" y="420" width="760" height="80" rx="12" fill="#590DA0"/>
+  <!-- Vertical bracket showing ROI difference -->
+  <line x1="660" y1="196" x2="660" y2="420" stroke="#590DA0" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+  <line x1="1120" y1="372" x2="1120" y2="420" stroke="#888" stroke-width="2" stroke-dasharray="5,4" opacity="0.4"/>
+
+  <text x="580" y="458" text-anchor="middle" font-size="18" font-weight="700" fill="white">12× schneller zum ersten</text>
+  <text x="580" y="485" text-anchor="middle" font-size="18" font-weight="700" fill="#61D2CE">messbaren Ergebnis</text>
+
+  <!-- X axis labels -->
+  <text x="200" y="560" text-anchor="middle" font-size="13" fill="#888">Start</text>
+  <text x="505" y="560" text-anchor="middle" font-size="13" fill="#888">4 Monate</text>
+  <text x="810" y="560" text-anchor="middle" font-size="13" fill="#888">9 Monate</text>
+  <text x="1120" y="560" text-anchor="middle" font-size="13" fill="#888">18 Monate</text>
+  <line x1="200" y1="570" x2="1120" y2="570" stroke="#1A1A2E" stroke-width="1.5" opacity="0.2"/>
+</svg>
