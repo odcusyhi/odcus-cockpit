@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs><style>text { font-family: Inter, Arial, Helvetica, sans-serif; }</style></defs>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Background circles -->
+<circle cx="100" cy="580" r="110" fill="#E0D9F5" opacity="0.32"/>
+<circle cx="1140" cy="580" r="90" fill="#E0D9F5" opacity="0.28"/>
+<circle cx="600" cy="80" r="55" fill="#61D2CE" opacity="0.12"/>
+
+<!-- Title -->
+<text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#1A1A2E">Warum Absicherung rational wird</text>
+<text x="600" y="74" text-anchor="middle" font-size="14" fill="#4A4A6A">Das Ungleichgewicht, das CYA-Kultur schafft</text>
+
+<!-- ===== LEFT CARD: Schmerz bei Fehler (tall, purple) ===== -->
+<rect x="90" y="100" width="380" height="390" rx="22" fill="#590DA0"/>
+<!-- Top icon area: big ! in circle -->
+<circle cx="280" cy="166" r="38" fill="rgba(255,255,255,0.18)"/>
+<circle cx="280" cy="166" r="26" fill="rgba(255,255,255,0.28)"/>
+<text x="280" y="177" text-anchor="middle" font-size="30" font-weight="800" fill="#FFFFFF">!</text>
+<!-- Card label -->
+<text x="280" y="228" text-anchor="middle" font-size="18" font-weight="800" fill="#FFFFFF">Schmerz bei Fehler</text>
+<!-- Big HOCH label -->
+<text x="280" y="278" text-anchor="middle" font-size="48" font-weight="800" fill="#FFFFFF">HOCH</text>
+<!-- Divider line -->
+<line x1="130" y1="298" x2="430" y2="298" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+<!-- Bullet properties -->
+<circle cx="138" cy="326" r="5" fill="#61D2CE"/>
+<text x="152" y="332" font-size="14" fill="rgba(255,255,255,0.9)">Persönlich zurechenbar</text>
+<circle cx="138" cy="356" r="5" fill="#61D2CE"/>
+<text x="152" y="362" font-size="14" fill="rgba(255,255,255,0.9)">Sofort sichtbar</text>
+<circle cx="138" cy="386" r="5" fill="#61D2CE"/>
+<text x="152" y="392" font-size="14" fill="rgba(255,255,255,0.9)">Bleibt in Erinnerung</text>
+<!-- Bottom tag -->
+<rect x="110" y="452" width="340" height="30" rx="8" fill="rgba(0,0,0,0.2)"/>
+<text x="280" y="472" text-anchor="middle" font-size="13" font-weight="600" fill="rgba(255,255,255,0.85)">Karriererisiko: sehr hoch</text>
+
+<!-- ===== RIGHT CARD: Gewinn beim Rechthaben (small, muted) ===== -->
+<rect x="730" y="350" width="380" height="140" rx="22" fill="#E0D9F5"/>
+<!-- Top icon: ? in circle -->
+<circle cx="920" cy="380" r="20" fill="#C8B8E0"/>
+<text x="920" y="388" text-anchor="middle" font-size="22" font-weight="800" fill="#8A8AAA">?</text>
+<!-- Card label -->
+<text x="920" y="420" text-anchor="middle" font-size="16" font-weight="800" fill="#6A6A8A">Gewinn beim Rechthaben</text>
+<!-- GERING label -->
+<text x="920" y="460" text-anchor="middle" font-size="36" font-weight="800" fill="#AAAABC">GERING</text>
+<!-- Sub-label -->
+<text x="920" y="480" text-anchor="middle" font-size="12" fill="#AAAABC">kollektiv, diffus, geteilt</text>
+
+<!-- ===== CENTRAL ANNOTATION ===== -->
+<!-- Large arrow from left to right -->
+<line x1="486" y1="295" x2="710" y2="295" stroke="#E0D9F5" stroke-width="3" stroke-dasharray="8,5"/>
+<text x="600" y="270" text-anchor="middle" font-size="38" fill="#E0D9F5" font-weight="800">≫</text>
+<!-- Imbalance annotation box -->
+<rect x="500" y="305" width="200" height="56" rx="10" fill="#590DA0"/>
+<text x="600" y="328" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Ergebnis:</text>
+<text x="600" y="348" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Absicherung ist rational</text>
+
+<!-- ===== PERSON SILHOUETTE (between cards) ===== -->
+<!-- Head -->
+<circle cx="600" cy="450" r="22" fill="#1A1A2E" opacity="0.75"/>
+<!-- Body -->
+<path d="M575,478 Q600,472 625,478 L632,540 Q600,535 568,540 Z" fill="#1A1A2E" opacity="0.75"/>
+<!-- Legs -->
+<rect x="573" y="538" width="20" height="42" rx="5" fill="#1A1A2E" opacity="0.75"/>
+<rect x="607" y="538" width="20" height="42" rx="5" fill="#1A1A2E" opacity="0.75"/>
+
+<!-- ===== HEIGHT INDICATOR (left side of left card) ===== -->
+<line x1="72" y1="100" x2="72" y2="490" stroke="#590DA0" stroke-width="2" stroke-dasharray="5,3"/>
+<polygon points="67,100 77,100 72,88" fill="#590DA0"/>
+<polygon points="67,490 77,490 72,502" fill="#590DA0"/>
+<text x="54" y="302" text-anchor="middle" font-size="11" fill="#590DA0" font-weight="600" transform="rotate(-90,54,302)">390 px Schmerz</text>
+
+<!-- Height indicator right card -->
+<line x1="1128" y1="350" x2="1128" y2="490" stroke="#AAAABC" stroke-width="2" stroke-dasharray="5,3"/>
+<polygon points="1123,350 1133,350 1128,338" fill="#AAAABC"/>
+<polygon points="1123,490 1133,490 1128,502" fill="#AAAABC"/>
+<text x="1146" y="426" text-anchor="middle" font-size="11" fill="#AAAABC" font-weight="600" transform="rotate(90,1146,426)">140 px Gewinn</text>
+
+<!-- ===== FOOTER ===== -->
+<text x="600" y="606" text-anchor="middle" font-size="12" fill="#4A4A6A">Kein Memo nötig. Es reicht die Beobachtung, wie jemand anderes behandelt wird, wenn etwas schiefläuft.</text>
+</svg>
