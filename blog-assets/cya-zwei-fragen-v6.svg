@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+  <style>text { font-family: "Titillium Web", Inter, Arial, sans-serif; }</style>
+</defs>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Title -->
+<text x="600" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="#590DA0" font-family="'Public Sans', Inter, Arial, sans-serif">Entscheidung vs. Ergebnis: Vier Fälle</text>
+<text x="600" y="78" text-anchor="middle" font-size="20" fill="#4A4A6A">CYA-Kulturen verwechseln Glück mit Können und Pech mit Versagen</text>
+
+<!-- Y-AXIS LABEL -->
+<text x="40" y="330" text-anchor="middle" font-size="18" font-weight="700" fill="#1D1D1B" transform="rotate(-90,40,330)">Ergebnis</text>
+<text x="56" y="215" text-anchor="middle" font-size="16" fill="#999999" transform="rotate(-90,56,215)">gut</text>
+<text x="56" y="460" text-anchor="middle" font-size="16" fill="#999999" transform="rotate(-90,56,460)">schlecht</text>
+
+<!-- X-AXIS LABEL -->
+<text x="600" y="612" text-anchor="middle" font-size="18" font-weight="700" fill="#1D1D1B">Entscheidungsqualität</text>
+<text x="335" y="596" text-anchor="middle" font-size="16" fill="#999999">gut</text>
+<text x="865" y="596" text-anchor="middle" font-size="16" fill="#999999">schlecht</text>
+
+<!-- GRID LINES (1px Platinum) -->
+<rect x="70" y="90" width="1060" height="480" rx="10" fill="none" stroke="#E2E2E2" stroke-width="1"/>
+<line x1="600" y1="90" x2="600" y2="570" stroke="#E2E2E2" stroke-width="1.5"/>
+<line x1="70" y1="330" x2="1130" y2="330" stroke="#E2E2E2" stroke-width="1.5"/>
+
+<!-- ===== TL: IDEALFALL (Teal) ===== -->
+<circle cx="100" cy="120" r="22" fill="#61D2CE"/>
+<text x="100" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">01</text>
+<!-- Star icon at (335,162) -->
+<polygon points="335,138 343,157 364,157 349,169 355,188 335,177 315,188 321,169 306,157 327,157" fill="#61D2CE"/>
+<text x="335" y="218" text-anchor="middle" font-size="28" font-weight="700" fill="#0A8A87">Idealfall</text>
+<rect x="185" y="226" width="300" height="28" rx="5" fill="#61D2CE" opacity="0.18"/>
+<text x="335" y="245" text-anchor="middle" font-size="18" font-weight="600" fill="#0A8A87">Gute Entsch. · Gutes Ergebnis</text>
+<text x="335" y="275" text-anchor="middle" font-size="20" fill="#4A4A6A">Prozess war richtig.</text>
+<text x="335" y="299" text-anchor="middle" font-size="20" fill="#4A4A6A">Weiter so entscheiden.</text>
+<text x="335" y="323" text-anchor="middle" font-size="20" font-weight="700" fill="#0A8A87">→ Fortführen</text>
+
+<!-- ===== TR: GLÜCK (Violet) ===== -->
+<circle cx="630" cy="120" r="22" fill="#590DA0"/>
+<text x="630" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">02</text>
+<!-- Dice icon at (865,162) -->
+<rect x="843" y="140" width="44" height="44" rx="7" fill="none" stroke="#590DA0" stroke-width="3"/>
+<circle cx="854" cy="152" r="4.5" fill="#590DA0"/>
+<circle cx="876" cy="152" r="4.5" fill="#590DA0"/>
+<circle cx="865" cy="162" r="4.5" fill="#590DA0"/>
+<circle cx="854" cy="173" r="4.5" fill="#590DA0"/>
+<circle cx="876" cy="173" r="4.5" fill="#590DA0"/>
+<!-- CYA badge -->
+<rect x="760" y="82" width="210" height="26" rx="4" fill="#590DA0"/>
+<text x="865" y="99" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">CYA: belohnt das falsch</text>
+<text x="865" y="218" text-anchor="middle" font-size="28" font-weight="700" fill="#590DA0">Glück</text>
+<rect x="710" y="226" width="310" height="28" rx="5" fill="#590DA0" opacity="0.1"/>
+<text x="865" y="245" text-anchor="middle" font-size="18" font-weight="600" fill="#590DA0">Schlechte Entsch. · Gutes Erg.</text>
+<text x="865" y="275" text-anchor="middle" font-size="20" fill="#4A4A6A">Prozess war schlecht.</text>
+<text x="865" y="299" text-anchor="middle" font-size="20" fill="#4A4A6A">Kein Lernen findet statt.</text>
+<text x="865" y="323" text-anchor="middle" font-size="20" font-weight="700" fill="#590DA0">→ Prozess korrigieren</text>
+
+<!-- ===== BL: PECH (Violet) ===== -->
+<circle cx="100" cy="360" r="22" fill="#590DA0"/>
+<text x="100" y="368" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">03</text>
+<!-- Lightning bolt at (335,398) -->
+<polygon points="340,363 321,396 335,396 329,428 352,393 337,393"
+         fill="none" stroke="#590DA0" stroke-width="3" stroke-linejoin="round"/>
+<!-- CYA badge -->
+<rect x="118" y="322" width="214" height="26" rx="4" fill="#590DA0"/>
+<text x="225" y="339" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">CYA: bestraft das falsch</text>
+<text x="335" y="460" text-anchor="middle" font-size="28" font-weight="700" fill="#590DA0">Pech</text>
+<rect x="185" y="469" width="300" height="28" rx="5" fill="#590DA0" opacity="0.1"/>
+<text x="335" y="488" text-anchor="middle" font-size="18" font-weight="600" fill="#590DA0">Gute Entsch. · Schlechtes Erg.</text>
+<text x="335" y="518" text-anchor="middle" font-size="20" fill="#4A4A6A">Prozess war richtig.</text>
+<text x="335" y="542" text-anchor="middle" font-size="20" fill="#4A4A6A">Lernbereitschaft stirbt.</text>
+<text x="335" y="566" text-anchor="middle" font-size="20" font-weight="700" fill="#590DA0">→ Darf nicht bestraft werden</text>
+
+<!-- ===== BR: FEHLER (Teal) ===== -->
+<circle cx="630" cy="360" r="22" fill="#61D2CE"/>
+<text x="630" y="368" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">04</text>
+<!-- Magnifying glass at (865,398) -->
+<circle cx="858" cy="393" r="24" fill="none" stroke="#999999" stroke-width="3"/>
+<line x1="875" y1="410" x2="892" y2="427" stroke="#999999" stroke-width="4" stroke-linecap="round"/>
+<text x="865" y="460" text-anchor="middle" font-size="28" font-weight="700" fill="#999999">Fehler</text>
+<rect x="685" y="469" width="360" height="28" rx="5" fill="#E2E2E2"/>
+<text x="865" y="488" text-anchor="middle" font-size="18" font-weight="600" fill="#999999">Schlechte Entsch. · Schlechtes Erg.</text>
+<text x="865" y="518" text-anchor="middle" font-size="20" fill="#999999">Prozess war schlecht.</text>
+<text x="865" y="542" text-anchor="middle" font-size="20" fill="#999999">Ursachen suchen.</text>
+<text x="865" y="566" text-anchor="middle" font-size="20" font-weight="700" fill="#999999">→ Ursache analysieren</text>
+</svg>
