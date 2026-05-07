@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs><style>text { font-family: Inter, Arial, Helvetica, sans-serif; }</style></defs>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Background decoration -->
+<circle cx="60" cy="100" r="80" fill="#E0D9F5" opacity="0.3"/>
+<circle cx="1150" cy="540" r="90" fill="#E0D9F5" opacity="0.28"/>
+<circle cx="1100" cy="90" r="50" fill="#61D2CE" opacity="0.15"/>
+
+<!-- Title -->
+<text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#1A1A2E">Entscheidung vs. Ergebnis: Vier Fälle</text>
+<text x="600" y="74" text-anchor="middle" font-size="14" fill="#4A4A6A">CYA-Kulturen verwechseln Glück mit Können – und Pech mit Versagen</text>
+
+<!-- ===== AXIS LABELS ===== -->
+<!-- Y axis -->
+<text x="38" y="355" text-anchor="middle" font-size="13" fill="#1A1A2E" font-weight="700" transform="rotate(-90,38,355)">Ergebnis</text>
+<text x="56" y="200" text-anchor="middle" font-size="11" fill="#888" transform="rotate(-90,56,200)">gut</text>
+<text x="56" y="510" text-anchor="middle" font-size="11" fill="#888" transform="rotate(-90,56,510)">schlecht</text>
+<!-- X axis -->
+<text x="625" y="606" text-anchor="middle" font-size="13" fill="#1A1A2E" font-weight="700">Entscheidungsqualität</text>
+<text x="340" y="590" text-anchor="middle" font-size="11" fill="#888">gut</text>
+<text x="880" y="590" text-anchor="middle" font-size="11" fill="#888">schlecht</text>
+
+<!-- Center dividers -->
+<line x1="80" y1="340" x2="1160" y2="340" stroke="#D0C8E8" stroke-width="2.5"/>
+<line x1="600" y1="90" x2="600" y2="575" stroke="#D0C8E8" stroke-width="2.5"/>
+
+<!-- ===== TL: IDEALFALL (teal) ===== -->
+<rect x="80" y="90" width="508" height="238" rx="18" fill="#61D2CE" opacity="0.18"/>
+<rect x="80" y="90" width="508" height="238" rx="18" fill="none" stroke="#61D2CE" stroke-width="3"/>
+<!-- Trophy icon -->
+<!-- Cup body -->
+<path d="M294,132 L294,178 Q294,192 308,192 L332,192 Q346,192 346,178 L346,132 Z" fill="none" stroke="#0A8A87" stroke-width="3" stroke-linejoin="round"/>
+<!-- Cup handles -->
+<path d="M294,145 Q276,145 276,162 Q276,178 294,178" fill="none" stroke="#0A8A87" stroke-width="3"/>
+<path d="M346,145 Q364,145 364,162 Q364,178 346,178" fill="none" stroke="#0A8A87" stroke-width="3"/>
+<!-- Cup stem -->
+<line x1="320" y1="192" x2="320" y2="208" stroke="#0A8A87" stroke-width="3"/>
+<line x1="304" y1="208" x2="336" y2="208" stroke="#0A8A87" stroke-width="4"/>
+<!-- Star above cup -->
+<text x="320" y="128" text-anchor="middle" font-size="22" fill="#0A8A87">★</text>
+<!-- Text -->
+<text x="334" y="148" text-anchor="middle" font-size="22" font-weight="800" fill="#0A8A87">Idealfall</text>
+<rect x="254" y="157" width="160" height="26" rx="6" fill="#0A8A87"/>
+<text x="334" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Gute Entscheidung ✓</text>
+<text x="334" y="208" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.8">Prozess war richtig.</text>
+<text x="334" y="226" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.8">Weiter so entscheiden.</text>
+<!-- Fortführen badge -->
+<rect x="254" y="282" width="160" height="28" rx="8" fill="#0A8A87" opacity="0.15"/>
+<text x="334" y="301" text-anchor="middle" font-size="13" font-weight="700" fill="#0A8A87">Fortführen</text>
+
+<!-- ===== TR: GLÜCK (faded purple, CYA wrongly rewards) ===== -->
+<rect x="612" y="90" width="548" height="238" rx="18" fill="#590DA0" opacity="0.08"/>
+<rect x="612" y="90" width="548" height="238" rx="18" fill="none" stroke="#590DA0" stroke-width="3" stroke-dasharray="10,5"/>
+<!-- Dice icon -->
+<rect x="838" y="118" width="60" height="60" rx="8" fill="none" stroke="#590DA0" stroke-width="3"/>
+<circle cx="851" cy="131" r="5" fill="#590DA0"/>
+<circle cx="880" cy="131" r="5" fill="#590DA0"/>
+<circle cx="865" cy="148" r="5" fill="#590DA0"/>
+<circle cx="851" cy="165" r="5" fill="#590DA0"/>
+<circle cx="880" cy="165" r="5" fill="#590DA0"/>
+<!-- CYA warning badge -->
+<rect x="848" y="82" width="130" height="22" rx="5" fill="#590DA0"/>
+<text x="913" y="97" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">CYA belohnt das falsch</text>
+<!-- Text -->
+<text x="886" y="148" text-anchor="middle" font-size="22" font-weight="800" fill="#590DA0">Glück</text>
+<rect x="806" y="157" width="160" height="26" rx="6" fill="#590DA0"/>
+<text x="886" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Schlechte Entscheidung ✗</text>
+<text x="886" y="208" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.8">Prozess war schlecht.</text>
+<text x="886" y="226" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.8">Kein Lernen findet statt.</text>
+<rect x="806" y="282" width="160" height="28" rx="8" fill="#590DA0" opacity="0.12"/>
+<text x="886" y="301" text-anchor="middle" font-size="13" font-weight="700" fill="#590DA0">Prozess korrigieren</text>
+
+<!-- ===== BL: PECH (faded purple, CYA wrongly punishes) ===== -->
+<rect x="80" y="352" width="508" height="210" rx="18" fill="#590DA0" opacity="0.08"/>
+<rect x="80" y="352" width="508" height="210" rx="18" fill="none" stroke="#590DA0" stroke-width="3" stroke-dasharray="10,5"/>
+<!-- Lightning bolt icon -->
+<polygon points="316,378 300,418 318,418 302,452 330,404 312,404" fill="none" stroke="#590DA0" stroke-width="3" stroke-linejoin="round"/>
+<!-- CYA warning badge -->
+<rect x="120" y="345" width="130" height="22" rx="5" fill="#590DA0"/>
+<text x="185" y="360" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">CYA bestraft das falsch</text>
+<!-- Text -->
+<text x="334" y="396" text-anchor="middle" font-size="22" font-weight="800" fill="#590DA0">Pech</text>
+<rect x="254" y="405" width="160" height="26" rx="6" fill="#590DA0"/>
+<text x="334" y="423" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Gute Entscheidung ✓</text>
+<text x="334" y="455" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.8">Prozess war richtig.</text>
+<text x="334" y="473" text-anchor="middle" font-size="13" fill="#1A1A2E" opacity="0.8">Lernbereitschaft stirbt.</text>
+<rect x="224" y="516" width="220" height="28" rx="8" fill="#590DA0" opacity="0.12"/>
+<text x="334" y="535" text-anchor="middle" font-size="13" font-weight="700" fill="#590DA0">Darf nicht bestraft werden</text>
+
+<!-- ===== BR: FEHLER (gray) ===== -->
+<rect x="612" y="352" width="548" height="210" rx="18" fill="#F0EEF8"/>
+<rect x="612" y="352" width="548" height="210" rx="18" fill="none" stroke="#BBBBCC" stroke-width="2"/>
+<!-- X mark icon -->
+<line x1="866" y1="378" x2="906" y2="418" stroke="#AAAABC" stroke-width="5" stroke-linecap="round"/>
+<line x1="906" y1="378" x2="866" y2="418" stroke="#AAAABC" stroke-width="5" stroke-linecap="round"/>
+<circle cx="886" cy="398" r="28" fill="none" stroke="#AAAABC" stroke-width="3"/>
+<!-- Text -->
+<text x="886" y="396" text-anchor="middle" font-size="22" font-weight="800" fill="#888">Fehler</text>
+<rect x="836" y="405" width="100" height="26" rx="6" fill="#BBBBCC"/>
+<text x="886" y="423" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Analysieren ✗</text>
+<text x="886" y="460" text-anchor="middle" font-size="13" fill="#888">Prozess war schlecht.</text>
+<text x="886" y="478" text-anchor="middle" font-size="13" fill="#888">Ursachen suchen.</text>
+<rect x="816" y="516" width="140" height="28" rx="8" fill="#BBBBCC" opacity="0.35"/>
+<text x="886" y="535" text-anchor="middle" font-size="13" font-weight="700" fill="#888">Ursache analysieren</text>
+
+<!-- Footer -->
+<text x="600" y="603" text-anchor="middle" font-size="12" fill="#590DA0" font-weight="600">CYA-Kulturen bestrafen Pech und belohnen Glück. Gute Organisationen bewerten den Prozess – nicht das Glück.</text>
+</svg>
