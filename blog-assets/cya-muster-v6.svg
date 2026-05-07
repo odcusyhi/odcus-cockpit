@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+  <style>text { font-family: "Titillium Web", Inter, Arial, sans-serif; }</style>
+  <linearGradient id="ag" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#61D2CE"/>
+    <stop offset="100%" stop-color="#8719E1"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Title -->
+<text x="600" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="#590DA0" font-family="'Public Sans', Inter, Arial, sans-serif">Die vier Muster der CYA-Kultur</text>
+<text x="600" y="78" text-anchor="middle" font-size="20" fill="#4A4A6A">Wie Absicherungsverhalten in der Praxis aussieht</text>
+
+<!-- ===== BOX 1: Die Warn-E-Mail · Violet ===== -->
+<rect x="90" y="95" width="220" height="250" rx="12" fill="#590DA0"/>
+<circle cx="116" cy="121" r="22" fill="#8719E1"/>
+<text x="116" y="129" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">01</text>
+<!-- ENVELOPE ICON centered at (200, 235) -->
+<rect x="156" y="202" width="88" height="66" rx="5" fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="3"/>
+<line x1="156" y1="214" x2="200" y2="242" stroke="rgba(255,255,255,0.92)" stroke-width="3"/>
+<line x1="244" y1="214" x2="200" y2="242" stroke="rgba(255,255,255,0.92)" stroke-width="3"/>
+<line x1="168" y1="255" x2="232" y2="255" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+<!-- Labels below -->
+<text x="200" y="378" text-anchor="middle" font-size="28" font-weight="700" fill="#590DA0">Die Warn-E-Mail</text>
+<text x="200" y="404" text-anchor="middle" font-size="22" fill="#4A4A6A">Risiko dokumentiert,</text>
+<text x="200" y="430" text-anchor="middle" font-size="22" fill="#4A4A6A">nicht gelöst</text>
+
+<!-- GRADIENT CONNECTOR 1→2 -->
+<line x1="316" y1="220" x2="342" y2="220" stroke="url(#ag)" stroke-width="5"/>
+<polygon points="342,212 358,220 342,228" fill="#8719E1"/>
+
+<!-- ===== BOX 2: Der Approval-Loop · Teal ===== -->
+<rect x="360" y="95" width="220" height="250" rx="12" fill="#61D2CE"/>
+<circle cx="386" cy="121" r="22" fill="rgba(0,0,0,0.18)"/>
+<text x="386" y="129" text-anchor="middle" font-size="16" font-weight="700" fill="#1D1D1B">02</text>
+<!-- HUB ICON centered at (470, 230) -->
+<circle cx="470" cy="230" r="20" fill="rgba(0,0,0,0.25)"/>
+<circle cx="470" cy="230" r="11" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+<line x1="470" y1="210" x2="470" y2="195" stroke="rgba(0,0,0,0.22)" stroke-width="1.5"/>
+<circle cx="470" cy="182" r="13" fill="rgba(255,255,255,0.92)"/>
+<line x1="490" y1="218" x2="505" y2="213" stroke="rgba(0,0,0,0.22)" stroke-width="1.5"/>
+<circle cx="516" cy="215" r="13" fill="rgba(255,255,255,0.92)"/>
+<line x1="488" y1="243" x2="497" y2="256" stroke="rgba(0,0,0,0.22)" stroke-width="1.5"/>
+<circle cx="498" cy="269" r="13" fill="rgba(255,255,255,0.92)"/>
+<line x1="452" y1="243" x2="443" y2="256" stroke="rgba(0,0,0,0.22)" stroke-width="1.5"/>
+<circle cx="442" cy="269" r="13" fill="rgba(255,255,255,0.92)"/>
+<line x1="450" y1="218" x2="435" y2="213" stroke="rgba(0,0,0,0.22)" stroke-width="1.5"/>
+<circle cx="424" cy="215" r="13" fill="rgba(255,255,255,0.92)"/>
+<!-- Labels below -->
+<text x="470" y="378" text-anchor="middle" font-size="28" font-weight="700" fill="#1D1D1B">Der Approval-Loop</text>
+<text x="470" y="404" text-anchor="middle" font-size="22" fill="#4A4A6A">7 Stellen nicken ab,</text>
+<text x="470" y="430" text-anchor="middle" font-size="22" fill="#4A4A6A">1 ist betroffen</text>
+
+<!-- GRADIENT CONNECTOR 2→3 -->
+<line x1="586" y1="220" x2="612" y2="220" stroke="url(#ag)" stroke-width="5"/>
+<polygon points="612,212 628,220 612,228" fill="#8719E1"/>
+
+<!-- ===== BOX 3: Der sichere Vendor · Blue-Violet ===== -->
+<rect x="630" y="95" width="220" height="250" rx="12" fill="#8719E1"/>
+<circle cx="656" cy="121" r="22" fill="rgba(255,255,255,0.25)"/>
+<text x="656" y="129" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">03</text>
+<!-- SHIELD + CHECKMARK ICON centered at (740, 230) -->
+<path d="M740,196 L764,207 L764,233 Q740,252 740,252 Q740,252 716,233 L716,207 Z"
+      fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="728,228 736,237 753,219"
+          fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Labels below -->
+<text x="740" y="378" text-anchor="middle" font-size="28" font-weight="700" fill="#8719E1">Der sichere Vendor</text>
+<text x="740" y="404" text-anchor="middle" font-size="22" fill="#4A4A6A">Nicht den Besten,</text>
+<text x="740" y="430" text-anchor="middle" font-size="22" fill="#4A4A6A">den Bekannten wählen</text>
+
+<!-- GRADIENT CONNECTOR 3→4 -->
+<line x1="856" y1="220" x2="882" y2="220" stroke="url(#ag)" stroke-width="5"/>
+<polygon points="882,212 898,220 882,228" fill="#8719E1"/>
+
+<!-- ===== BOX 4: Das Scope-Kabuki · Platinum ===== -->
+<rect x="900" y="95" width="220" height="250" rx="12" fill="#E2E2E2"/>
+<circle cx="926" cy="121" r="22" fill="#590DA0"/>
+<text x="926" y="129" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">04</text>
+<!-- BULLSEYE ICON centered at (1010, 230) -->
+<circle cx="1010" cy="230" r="42" fill="none" stroke="#590DA0" stroke-width="3"/>
+<circle cx="1010" cy="230" r="27" fill="none" stroke="#590DA0" stroke-width="3"/>
+<circle cx="1010" cy="230" r="12" fill="#590DA0"/>
+<!-- Labels below -->
+<text x="1010" y="378" text-anchor="middle" font-size="28" font-weight="700" fill="#590DA0">Das Scope-Kabuki</text>
+<text x="1010" y="404" text-anchor="middle" font-size="22" fill="#4A4A6A">Erfolg bleibt</text>
+<text x="1010" y="430" text-anchor="middle" font-size="22" fill="#4A4A6A">umdefinierbar</text>
+
+<!-- PLATINUM DIVIDER + FOOTER -->
+<line x1="90" y1="458" x2="1110" y2="458" stroke="#E2E2E2" stroke-width="1"/>
+<text x="600" y="488" text-anchor="middle" font-size="17" fill="#590DA0" font-weight="600">Alle vier Muster teilen dasselbe Ziel: Verantwortung diffus halten, um persönliche Konsequenzen zu vermeiden.</text>
+
+<!-- MARGIN ANNOTATION -->
+<text x="1150" y="220" font-size="15" fill="#590DA0" font-style="italic" opacity="0.65" text-anchor="middle" transform="rotate(90,1150,220)">Kein Lernen findet statt</text>
+</svg>
