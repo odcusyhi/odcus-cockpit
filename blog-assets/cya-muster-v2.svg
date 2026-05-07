@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs><style>text { font-family: Inter,Arial,Helvetica,sans-serif; }</style></defs>
+<rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+
+<text x="600" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A2E">Die vier Muster der CYA-Kultur</text>
+<text x="600" y="68" text-anchor="middle" font-size="13" fill="#4A4A6A">Wie Absicherungsverhalten in der Praxis aussieht</text>
+
+<!-- Table header -->
+<rect x="60" y="82" width="1080" height="40" fill="#590DA0" rx="4"/>
+<text x="185" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="1">MUSTER</text>
+<text x="565" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="1">WAS PASSIERT</text>
+<text x="980" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="1">KONSEQUENZ</text>
+<line x1="310" y1="82" x2="310" y2="122" stroke="#7A3DC0" stroke-width="1"/>
+<line x1="820" y1="82" x2="820" y2="122" stroke="#7A3DC0" stroke-width="1"/>
+
+<!-- Row 1: Die Warn-E-Mail -->
+<rect x="60" y="122" width="250" height="108" fill="#F0E8FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="310" y="122" width="510" height="108" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="820" y="122" width="320" height="108" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="72" y="136" width="26" height="20" fill="#590DA0" rx="3"/>
+<text x="85" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">01</text>
+<text x="185" y="168" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E">Die Warn-E-Mail</text>
+<text x="325" y="154" font-size="13" fill="#4A4A6A">Fünf Minuten vor der Entscheidung kommt</text>
+<text x="325" y="172" font-size="13" fill="#4A4A6A">ein Risikoabsatz an alle Entscheider –</text>
+<text x="325" y="190" font-size="13" fill="#4A4A6A">geschrieben, um es später zitieren zu können.</text>
+<text x="835" y="154" font-size="13" fill="#4A4A6A">Entscheidung wird nicht</text>
+<text x="835" y="172" font-size="13" fill="#4A4A6A">verbessert. Nur die</text>
+<text x="835" y="190" font-size="13" fill="#4A4A6A">Absicherung ist dokumentiert.</text>
+
+<!-- Row 2: Der Approval-Loop -->
+<rect x="60" y="230" width="250" height="108" fill="#F0E8FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="310" y="230" width="510" height="108" fill="#F8F7FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="820" y="230" width="320" height="108" fill="#F8F7FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="72" y="244" width="26" height="20" fill="#590DA0" rx="3"/>
+<text x="85" y="258" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">02</text>
+<text x="185" y="276" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E">Der Approval-Loop</text>
+<text x="325" y="262" font-size="13" fill="#4A4A6A">Sieben Abteilungen stimmen ab, obwohl nur</text>
+<text x="325" y="280" font-size="13" fill="#4A4A6A">eine betroffen ist. Wenn alle zugestimmt</text>
+<text x="325" y="298" font-size="13" fill="#4A4A6A">haben, kann keiner alleine schuld sein.</text>
+<text x="835" y="262" font-size="13" fill="#4A4A6A">Accountability löst sich auf.</text>
+<text x="835" y="280" font-size="13" fill="#4A4A6A">Entscheidungen dauern</text>
+<text x="835" y="298" font-size="13" fill="#4A4A6A">dreimal so lang.</text>
+
+<!-- Row 3: Der sichere Vendor -->
+<rect x="60" y="338" width="250" height="108" fill="#F0E8FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="310" y="338" width="510" height="108" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="820" y="338" width="320" height="108" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="72" y="352" width="26" height="20" fill="#8719E1" rx="3"/>
+<text x="85" y="366" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">03</text>
+<text x="185" y="384" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E">Der sichere Vendor</text>
+<text x="325" y="370" font-size="13" fill="#4A4A6A">Man wählt den bekanntesten Anbieter, nicht</text>
+<text x="325" y="388" font-size="13" fill="#4A4A6A">den besten. Hinterher lässt sich sagen:</text>
+<text x="325" y="406" font-size="13" fill="#4A4A6A">"Das macht der Marktführer genauso."</text>
+<text x="835" y="370" font-size="13" fill="#4A4A6A">Suboptimale Wahl.</text>
+<text x="835" y="388" font-size="13" fill="#4A4A6A">Niemand trägt die</text>
+<text x="835" y="406" font-size="13" fill="#4A4A6A">Verantwortung dafür.</text>
+
+<!-- Row 4: Das Scope-Kabuki -->
+<rect x="60" y="446" width="250" height="108" fill="#F0E8FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="310" y="446" width="510" height="108" fill="#F8F7FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="820" y="446" width="320" height="108" fill="#F8F7FF" stroke="#E0D9F5" stroke-width="1"/>
+<rect x="72" y="460" width="26" height="20" fill="#8719E1" rx="3"/>
+<text x="85" y="474" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">04</text>
+<text x="185" y="492" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E">Das Scope-Kabuki</text>
+<text x="325" y="478" font-size="13" fill="#4A4A6A">Projektziele bleiben bewusst vage. Erfolg</text>
+<text x="325" y="496" font-size="13" fill="#4A4A6A">und Misserfolg lassen sich hinterher</text>
+<text x="325" y="514" font-size="13" fill="#4A4A6A">unterschiedlich definieren.</text>
+<text x="835" y="478" font-size="13" fill="#4A4A6A">Kein echtes Lernen.</text>
+<text x="835" y="496" font-size="13" fill="#4A4A6A">Keine klare</text>
+<text x="835" y="514" font-size="13" fill="#4A4A6A">Verantwortung.</text>
+
+<text x="600" y="596" text-anchor="middle" font-size="12" fill="#4A4A6A">Alle vier Muster teilen dasselbe Ziel: Verantwortung diffus halten, um persönliche Konsequenzen zu vermeiden.</text>
+</svg>
