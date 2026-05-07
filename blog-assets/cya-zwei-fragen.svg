@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+  <text x="600" y="55" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#1A1A2E">Zwei Fragen. Meist wird nur eine gestellt.</text>
+
+  <!-- Divider -->
+  <line x1="600" y1="90" x2="600" y2="590" stroke="#E0D9F5" stroke-width="2"/>
+
+  <!-- Left column header: Wie es läuft -->
+  <rect x="60" y="90" width="510" height="60" rx="8" fill="#F0E8FF"/>
+  <text x="315" y="128" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#590DA0">Wie es läuft: nur Ergebnis zählt</text>
+
+  <!-- Left items -->
+  <rect x="60" y="170" width="510" height="90" rx="6" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="315" y="205" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">Hat es funktioniert?</text>
+  <text x="315" y="228" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Die einzige Frage, die gestellt wird.</text>
+  <text x="315" y="246" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Ergebnis bestimmt Verantwortung.</text>
+
+  <rect x="60" y="280" width="510" height="90" rx="6" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="315" y="315" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">Schlechte Entscheidung, gutes Ergebnis</text>
+  <text x="315" y="338" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Wird belohnt. Niemand lernt etwas.</text>
+  <text x="315" y="356" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Schlechte Praktiken bleiben unsichtbar.</text>
+
+  <rect x="60" y="390" width="510" height="90" rx="6" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="315" y="425" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">Gute Entscheidung, schlechtes Ergebnis</text>
+  <text x="315" y="448" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Wird bestraft. Lernbereitschaft stirbt.</text>
+  <text x="315" y="466" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">CYA-Kultur wächst.</text>
+
+  <rect x="60" y="495" width="510" height="60" rx="6" fill="#590DA0"/>
+  <text x="315" y="532" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="white">Folge: Niemand lernt. Alle sichern sich ab.</text>
+
+  <!-- Right column header: Wie es sein sollte -->
+  <rect x="630" y="90" width="510" height="60" rx="8" fill="#E8F9F8"/>
+  <text x="885" y="128" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#61D2CE">Was hilft: beide Fragen stellen</text>
+
+  <!-- Right items -->
+  <rect x="630" y="170" width="510" height="90" rx="6" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="885" y="205" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">War die Entscheidung richtig?</text>
+  <text x="885" y="228" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Gegeben was wir damals wussten.</text>
+  <text x="885" y="246" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Prozess, nicht Glück.</text>
+
+  <rect x="630" y="280" width="510" height="90" rx="6" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="885" y="315" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">Schlechte Entscheidung, gutes Ergebnis</text>
+  <text x="885" y="338" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Glück erkannt. Prozess verbessert.</text>
+  <text x="885" y="356" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Nächstes Mal besser aufgestellt.</text>
+
+  <rect x="630" y="390" width="510" height="90" rx="6" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="885" y="425" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">Gute Entscheidung, schlechtes Ergebnis</text>
+  <text x="885" y="448" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Pech erkannt. Mut wird nicht bestraft.</text>
+  <text x="885" y="466" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">CYA-Kultur hat keinen Nährboden.</text>
+
+  <rect x="630" y="495" width="510" height="60" rx="6" fill="#61D2CE"/>
+  <text x="885" y="532" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">Folge: Echtes Lernen. Mutige Entscheidungen.</text>
+</svg>
