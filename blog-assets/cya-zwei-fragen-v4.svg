@@ -5,102 +5,82 @@
 <rect width="1200" height="630" fill="#FFFFFF"/>
 
 <!-- Title -->
-<text x="600" y="50" text-anchor="middle" font-size="28" font-weight="700" fill="#590DA0" font-family="'Public Sans', Inter, Arial, sans-serif">Entscheidung vs. Ergebnis: Vier Fälle</text>
-<text x="600" y="73" text-anchor="middle" font-size="13" fill="#4A4A6A">CYA-Kulturen verwechseln Glück mit Können – und Pech mit Versagen</text>
+<text x="600" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="#590DA0" font-family="'Public Sans', Inter, Arial, sans-serif">Entscheidung vs. Ergebnis: Vier Fälle</text>
+<text x="600" y="76" text-anchor="middle" font-size="16" fill="#4A4A6A">CYA-Kulturen verwechseln Glück mit Können – und Pech mit Versagen</text>
 
-<!-- ================================================================
-     GRID: x=70 to x=1130  y=90 to y=570
-     Vertical divider:   x=600
-     Horizontal divider: y=330
-     Quadrant centers:
-       TL=(335,210)  TR=(865,210)  BL=(335,450)  BR=(865,450)
-     ================================================================ -->
+<!-- Y-AXIS LABEL -->
+<text x="40" y="330" text-anchor="middle" font-size="15" font-weight="700" fill="#1D1D1B" transform="rotate(-90,40,330)">Ergebnis</text>
+<text x="56" y="215" text-anchor="middle" font-size="13" fill="#999999" transform="rotate(-90,56,215)">gut</text>
+<text x="56" y="460" text-anchor="middle" font-size="13" fill="#999999" transform="rotate(-90,56,460)">schlecht</text>
 
-<!-- ===== Y-AXIS LABEL ===== -->
-<text x="40" y="330" text-anchor="middle" font-size="13" font-weight="700" fill="#1D1D1B" transform="rotate(-90,40,330)">Ergebnis</text>
-<text x="56" y="215" text-anchor="middle" font-size="11" fill="#999999" transform="rotate(-90,56,215)">gut</text>
-<text x="56" y="460" text-anchor="middle" font-size="11" fill="#999999" transform="rotate(-90,56,460)">schlecht</text>
+<!-- X-AXIS LABEL -->
+<text x="600" y="610" text-anchor="middle" font-size="15" font-weight="700" fill="#1D1D1B">Entscheidungsqualität</text>
+<text x="335" y="594" text-anchor="middle" font-size="13" fill="#999999">gut</text>
+<text x="865" y="594" text-anchor="middle" font-size="13" fill="#999999">schlecht</text>
 
-<!-- ===== X-AXIS LABEL ===== -->
-<text x="600" y="607" text-anchor="middle" font-size="13" font-weight="700" fill="#1D1D1B">Entscheidungsqualität</text>
-<text x="335" y="591" text-anchor="middle" font-size="11" fill="#999999">gut</text>
-<text x="865" y="591" text-anchor="middle" font-size="11" fill="#999999">schlecht</text>
-
-<!-- ===== GRID LINES (1px Platinum per guide) ===== -->
+<!-- GRID LINES (1px Platinum) -->
 <rect x="70" y="90" width="1060" height="480" rx="10" fill="none" stroke="#E2E2E2" stroke-width="1"/>
 <line x1="600" y1="90" x2="600" y2="570" stroke="#E2E2E2" stroke-width="1.5"/>
 <line x1="70" y1="330" x2="1130" y2="330" stroke="#E2E2E2" stroke-width="1.5"/>
 
-<!-- ================================================================
-     QUADRANT ICONS — Alternating Violet/Teal per guide
-     TL=Teal  TR=Violet  BL=Violet  BR=Teal
-     Number badges: alternating fill colors
-     ================================================================ -->
+<!-- ===== TL: IDEALFALL (Teal) ===== -->
+<circle cx="100" cy="120" r="22" fill="#61D2CE"/>
+<text x="100" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">01</text>
+<!-- Star icon at (335,162) -->
+<polygon points="335,138 343,157 364,157 349,169 355,188 335,177 315,188 321,169 306,157 327,157" fill="#61D2CE"/>
+<text x="335" y="213" text-anchor="middle" font-size="22" font-weight="700" fill="#0A8A87">Idealfall</text>
+<rect x="230" y="222" width="210" height="26" rx="5" fill="#61D2CE" opacity="0.18"/>
+<text x="335" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#0A8A87">Gute Entsch. · Gutes Ergebnis</text>
+<text x="335" y="268" text-anchor="middle" font-size="15" fill="#4A4A6A">Prozess war richtig.</text>
+<text x="335" y="288" text-anchor="middle" font-size="15" fill="#4A4A6A">Weiter so entscheiden.</text>
+<text x="335" y="315" text-anchor="middle" font-size="15" font-weight="700" fill="#0A8A87">→ Fortführen</text>
 
-<!-- ===== TL: IDEALFALL (icon=Teal, badge=Teal) ===== -->
-<!-- Number badge -->
-<circle cx="100" cy="120" r="20" fill="#61D2CE"/>
-<text x="100" y="127" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">01</text>
-<!-- STAR icon centered at (335, 165) -->
-<polygon points="335,140 342,157 362,157 347,167 353,185 335,175 317,185 323,167 308,157 328,157"
-         fill="#61D2CE"/>
-<!-- Title + labels -->
-<text x="335" y="210" text-anchor="middle" font-size="20" font-weight="700" fill="#0A8A87">Idealfall</text>
-<rect x="255" y="220" width="160" height="24" rx="5" fill="#61D2CE" opacity="0.18"/>
-<text x="335" y="237" text-anchor="middle" font-size="12" font-weight="600" fill="#0A8A87">Gute Entscheidung · Gutes Ergebnis</text>
-<text x="335" y="264" text-anchor="middle" font-size="12" fill="#4A4A6A">Prozess war richtig.</text>
-<text x="335" y="280" text-anchor="middle" font-size="12" fill="#4A4A6A">Weiter so entscheiden.</text>
-<text x="335" y="308" text-anchor="middle" font-size="12" font-weight="700" fill="#0A8A87">→ Fortführen</text>
-
-<!-- ===== TR: GLÜCK (icon=Violet, badge=Violet) ===== -->
-<circle cx="630" cy="120" r="20" fill="#590DA0"/>
-<text x="630" y="127" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">02</text>
-<!-- DICE icon centered at (865, 165): square with 5 dots -->
-<rect x="843" y="143" width="44" height="44" rx="7" fill="none" stroke="#590DA0" stroke-width="3"/>
-<circle cx="854" cy="154" r="4" fill="#590DA0"/>
-<circle cx="876" cy="154" r="4" fill="#590DA0"/>
-<circle cx="865" cy="165" r="4" fill="#590DA0"/>
-<circle cx="854" cy="176" r="4" fill="#590DA0"/>
-<circle cx="876" cy="176" r="4" fill="#590DA0"/>
+<!-- ===== TR: GLÜCK (Violet) ===== -->
+<circle cx="630" cy="120" r="22" fill="#590DA0"/>
+<text x="630" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">02</text>
+<!-- Dice icon at (865,162) -->
+<rect x="843" y="140" width="44" height="44" rx="7" fill="none" stroke="#590DA0" stroke-width="3"/>
+<circle cx="854" cy="152" r="4.5" fill="#590DA0"/>
+<circle cx="876" cy="152" r="4.5" fill="#590DA0"/>
+<circle cx="865" cy="162" r="4.5" fill="#590DA0"/>
+<circle cx="854" cy="173" r="4.5" fill="#590DA0"/>
+<circle cx="876" cy="173" r="4.5" fill="#590DA0"/>
 <!-- CYA badge -->
-<rect x="790" y="82" width="150" height="20" rx="4" fill="#590DA0"/>
-<text x="865" y="96" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF">CYA: belohnt das falsch</text>
-<!-- Title + labels -->
-<text x="865" y="210" text-anchor="middle" font-size="20" font-weight="700" fill="#590DA0">Glück</text>
-<rect x="785" y="220" width="160" height="24" rx="5" fill="#590DA0" opacity="0.1"/>
-<text x="865" y="237" text-anchor="middle" font-size="12" font-weight="600" fill="#590DA0">Schlechte Entsch. · Gutes Ergebnis</text>
-<text x="865" y="264" text-anchor="middle" font-size="12" fill="#4A4A6A">Prozess war schlecht.</text>
-<text x="865" y="280" text-anchor="middle" font-size="12" fill="#4A4A6A">Kein Lernen findet statt.</text>
-<text x="865" y="308" text-anchor="middle" font-size="12" font-weight="700" fill="#590DA0">→ Prozess korrigieren</text>
+<rect x="785" y="82" width="160" height="22" rx="4" fill="#590DA0"/>
+<text x="865" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">CYA: belohnt das falsch</text>
+<text x="865" y="213" text-anchor="middle" font-size="22" font-weight="700" fill="#590DA0">Glück</text>
+<rect x="760" y="222" width="210" height="26" rx="5" fill="#590DA0" opacity="0.1"/>
+<text x="865" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#590DA0">Schlechte Entsch. · Gutes Erg.</text>
+<text x="865" y="268" text-anchor="middle" font-size="15" fill="#4A4A6A">Prozess war schlecht.</text>
+<text x="865" y="288" text-anchor="middle" font-size="15" fill="#4A4A6A">Kein Lernen findet statt.</text>
+<text x="865" y="315" text-anchor="middle" font-size="15" font-weight="700" fill="#590DA0">→ Prozess korrigieren</text>
 
-<!-- ===== BL: PECH (icon=Violet, badge=Violet) ===== -->
-<circle cx="100" cy="360" r="20" fill="#590DA0"/>
-<text x="100" y="367" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">03</text>
-<!-- LIGHTNING icon centered at (335, 400): zig-zag bolt -->
-<polygon points="340,365 322,395 335,395 330,425 350,393 336,393"
+<!-- ===== BL: PECH (Violet) ===== -->
+<circle cx="100" cy="360" r="22" fill="#590DA0"/>
+<text x="100" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">03</text>
+<!-- Lightning bolt at (335,398) -->
+<polygon points="340,363 321,396 335,396 329,428 352,393 337,393"
          fill="none" stroke="#590DA0" stroke-width="3" stroke-linejoin="round"/>
 <!-- CYA badge -->
-<rect x="150" y="323" width="150" height="20" rx="4" fill="#590DA0"/>
-<text x="225" y="337" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF">CYA: bestraft das falsch</text>
-<!-- Title + labels -->
-<text x="335" y="450" text-anchor="middle" font-size="20" font-weight="700" fill="#590DA0">Pech</text>
-<rect x="255" y="460" width="160" height="24" rx="5" fill="#590DA0" opacity="0.1"/>
-<text x="335" y="477" text-anchor="middle" font-size="12" font-weight="600" fill="#590DA0">Gute Entsch. · Schlechtes Ergebnis</text>
-<text x="335" y="504" text-anchor="middle" font-size="12" fill="#4A4A6A">Prozess war richtig.</text>
-<text x="335" y="520" text-anchor="middle" font-size="12" fill="#4A4A6A">Lernbereitschaft stirbt.</text>
-<text x="335" y="548" text-anchor="middle" font-size="12" font-weight="700" fill="#590DA0">→ Darf nicht bestraft werden</text>
+<rect x="145" y="322" width="160" height="22" rx="4" fill="#590DA0"/>
+<text x="225" y="337" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">CYA: bestraft das falsch</text>
+<text x="335" y="452" text-anchor="middle" font-size="22" font-weight="700" fill="#590DA0">Pech</text>
+<rect x="230" y="461" width="210" height="26" rx="5" fill="#590DA0" opacity="0.1"/>
+<text x="335" y="479" text-anchor="middle" font-size="14" font-weight="600" fill="#590DA0">Gute Entsch. · Schlechtes Erg.</text>
+<text x="335" y="507" text-anchor="middle" font-size="15" fill="#4A4A6A">Prozess war richtig.</text>
+<text x="335" y="527" text-anchor="middle" font-size="15" fill="#4A4A6A">Lernbereitschaft stirbt.</text>
+<text x="335" y="554" text-anchor="middle" font-size="15" font-weight="700" fill="#590DA0">→ Darf nicht bestraft werden</text>
 
-<!-- ===== BR: FEHLER (icon=Teal, badge=Teal) ===== -->
-<circle cx="630" cy="360" r="20" fill="#61D2CE"/>
-<text x="630" y="367" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">04</text>
-<!-- MAGNIFYING GLASS icon centered at (865, 400) -->
-<circle cx="858" cy="393" r="22" fill="none" stroke="#999999" stroke-width="3"/>
-<line x1="874" y1="409" x2="890" y2="425" stroke="#999999" stroke-width="4" stroke-linecap="round"/>
-<!-- Title + labels -->
-<text x="865" y="450" text-anchor="middle" font-size="20" font-weight="700" fill="#999999">Fehler</text>
-<rect x="785" y="460" width="160" height="24" rx="5" fill="#E2E2E2"/>
-<text x="865" y="477" text-anchor="middle" font-size="12" font-weight="600" fill="#999999">Schlechte Entsch. · Schlechtes Erg.</text>
-<text x="865" y="504" text-anchor="middle" font-size="12" fill="#999999">Prozess war schlecht.</text>
-<text x="865" y="520" text-anchor="middle" font-size="12" fill="#999999">Ursachen suchen.</text>
-<text x="865" y="548" text-anchor="middle" font-size="12" font-weight="700" fill="#999999">→ Ursache analysieren</text>
+<!-- ===== BR: FEHLER (Teal) ===== -->
+<circle cx="630" cy="360" r="22" fill="#61D2CE"/>
+<text x="630" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">04</text>
+<!-- Magnifying glass at (865,398) -->
+<circle cx="858" cy="393" r="24" fill="none" stroke="#999999" stroke-width="3"/>
+<line x1="875" y1="410" x2="892" y2="427" stroke="#999999" stroke-width="4" stroke-linecap="round"/>
+<text x="865" y="452" text-anchor="middle" font-size="22" font-weight="700" fill="#999999">Fehler</text>
+<rect x="760" y="461" width="210" height="26" rx="5" fill="#E2E2E2"/>
+<text x="865" y="479" text-anchor="middle" font-size="14" font-weight="600" fill="#999999">Schlechte Entsch. · Schlechtes Erg.</text>
+<text x="865" y="507" text-anchor="middle" font-size="15" fill="#999999">Prozess war schlecht.</text>
+<text x="865" y="527" text-anchor="middle" font-size="15" fill="#999999">Ursachen suchen.</text>
+<text x="865" y="554" text-anchor="middle" font-size="15" font-weight="700" fill="#999999">→ Ursache analysieren</text>
 </svg>
