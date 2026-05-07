@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+  <style>text { font-family: "Titillium Web", Inter, Arial, sans-serif; }</style>
+</defs>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Title -->
+<text x="600" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="#590DA0" font-family="'Public Sans', Inter, Arial, sans-serif">Warum Absicherung rational wird</text>
+<text x="600" y="78" text-anchor="middle" font-size="20" fill="#4A4A6A">Das Ungleichgewicht, das CYA-Kultur schafft</text>
+
+<!-- ===== LEFT BAR: Schmerz bei Fehler · Violet (h=390) ===== -->
+<rect x="160" y="100" width="300" height="390" rx="10" fill="#590DA0"/>
+<text x="310" y="96" text-anchor="middle" font-size="22" font-weight="700" fill="#590DA0">Schmerz bei Fehler</text>
+<!-- Icon -->
+<circle cx="310" cy="152" r="32" fill="rgba(255,255,255,0.18)"/>
+<text x="310" y="163" text-anchor="middle" font-size="42" font-weight="800" fill="#FFFFFF">!</text>
+<!-- Value -->
+<text x="310" y="248" text-anchor="middle" font-size="60" font-weight="800" fill="#FFFFFF">HOCH</text>
+<!-- Divider -->
+<line x1="180" y1="268" x2="440" y2="268" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+<!-- Bullet properties -->
+<circle cx="188" cy="296" r="5" fill="#61D2CE"/>
+<text x="204" y="303" font-size="20" fill="rgba(255,255,255,0.92)">Persönlich zurechenbar</text>
+<circle cx="188" cy="332" r="5" fill="#61D2CE"/>
+<text x="204" y="339" font-size="20" fill="rgba(255,255,255,0.92)">Sofort sichtbar</text>
+<circle cx="188" cy="368" r="5" fill="#61D2CE"/>
+<text x="204" y="375" font-size="20" fill="rgba(255,255,255,0.92)">Bleibt in Erinnerung</text>
+<circle cx="188" cy="404" r="5" fill="#61D2CE"/>
+<text x="204" y="411" font-size="20" fill="rgba(255,255,255,0.92)">Karriererisiko hoch</text>
+
+<!-- ===== RIGHT BAR: Gewinn beim Rechthaben · Platinum (h=120) ===== -->
+<rect x="740" y="370" width="300" height="120" rx="10" fill="#E2E2E2"/>
+<text x="890" y="364" text-anchor="middle" font-size="22" font-weight="700" fill="#999999">Gewinn beim Rechthaben</text>
+<!-- Icon -->
+<circle cx="890" cy="400" r="20" fill="rgba(0,0,0,0.06)"/>
+<text x="890" y="411" text-anchor="middle" font-size="24" font-weight="700" fill="#999999">?</text>
+<!-- Value -->
+<text x="890" y="460" text-anchor="middle" font-size="46" font-weight="800" fill="#999999">GERING</text>
+<text x="890" y="482" text-anchor="middle" font-size="18" fill="#999999">kollektiv · diffus · geteilt</text>
+
+<!-- SHARED BASELINE -->
+<line x1="140" y1="498" x2="1060" y2="498" stroke="#E2E2E2" stroke-width="1.5"/>
+
+<!-- CENTRAL COMPARISON -->
+<line x1="470" y1="300" x2="720" y2="300" stroke="#E2E2E2" stroke-width="2" stroke-dasharray="6,4"/>
+<rect x="480" y="318" width="240" height="68" rx="8" fill="#590DA0"/>
+<text x="600" y="348" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">Ergebnis:</text>
+<text x="600" y="372" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">Absicherung ist rational</text>
+
+<!-- Height indicator lines -->
+<line x1="142" y1="100" x2="142" y2="498" stroke="#E2E2E2" stroke-width="1" stroke-dasharray="4,3"/>
+<polygon points="137,100 147,100 142,90" fill="#E2E2E2"/>
+<line x1="1058" y1="370" x2="1058" y2="498" stroke="#E2E2E2" stroke-width="1" stroke-dasharray="4,3"/>
+<polygon points="1053,370 1063,370 1058,360" fill="#E2E2E2"/>
+
+<!-- FOOTER -->
+<line x1="140" y1="528" x2="1060" y2="528" stroke="#E2E2E2" stroke-width="1"/>
+<text x="600" y="562" text-anchor="middle" font-size="18" fill="#4A4A6A">Kein Memo nötig. Es reicht die Beobachtung, wie jemand anderes behandelt wird, wenn etwas schiefläuft.</text>
+
+<!-- MARGIN ANNOTATION -->
+<text x="86" y="300" font-size="15" fill="#590DA0" font-style="italic" opacity="0.65" text-anchor="middle" transform="rotate(-90,86,300)">asymmetrisches Risiko</text>
+</svg>
