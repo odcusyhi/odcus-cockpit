@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+
+  <!-- Title -->
+  <text x="600" y="54" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#1A1A2E">Der Pilot-Zyklus</text>
+  <text x="600" y="80" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" fill="#4A4A6A">Vier Schritte, die sich wiederholen — und bei jedem Durchlauf besser werden</text>
+
+  <!-- Center circle -->
+  <circle cx="600" cy="340" r="82" fill="#F0E8FF" stroke="#590DA0" stroke-width="2"/>
+  <text x="600" y="334" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#590DA0">KI-Einsatz</text>
+  <text x="600" y="356" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">skalieren</text>
+
+  <!-- Step boxes -->
+  <!-- TOP: Definieren -->
+  <rect x="456" y="110" width="288" height="74" rx="10" fill="#590DA0"/>
+  <text x="600" y="141" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">1. Definieren</text>
+  <text x="600" y="165" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#D4B8F0">Aufgabe + Erfolgskriterien festlegen</text>
+
+  <!-- RIGHT: Pilotieren -->
+  <rect x="876" y="280" width="252" height="74" rx="10" fill="#8719E1"/>
+  <text x="1002" y="311" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">2. Pilotieren</text>
+  <text x="1002" y="335" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#D4B8F0">4–6 Wochen, ein Team</text>
+
+  <!-- BOTTOM: Auswerten -->
+  <rect x="456" y="492" width="288" height="74" rx="10" fill="#61D2CE"/>
+  <text x="600" y="523" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#1A1A2E">3. Auswerten</text>
+  <text x="600" y="547" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#1A5A59">Was hat funktioniert?</text>
+
+  <!-- LEFT: Ausweiten -->
+  <rect x="72" y="280" width="252" height="74" rx="10" fill="#590DA0"/>
+  <text x="198" y="311" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">4. Ausweiten</text>
+  <text x="198" y="335" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#D4B8F0">Nächsten Prozess angehen</text>
+
+  <!-- Arrows: clockwise -->
+  <!-- Top → Right (curved arc) -->
+  <path d="M 744 163 Q 870 200 876 317" stroke="#590DA0" stroke-width="2.5" fill="none"/>
+  <polygon points="870,313 882,321 876,309" fill="#590DA0"/>
+
+  <!-- Right → Bottom (curved arc) -->
+  <path d="M 940 354 Q 890 470 744 510" stroke="#8719E1" stroke-width="2.5" fill="none"/>
+  <polygon points="749,503 739,515 751,516" fill="#8719E1"/>
+
+  <!-- Bottom → Left (curved arc) -->
+  <path d="M 456 529 Q 330 490 324 354" stroke="#61D2CE" stroke-width="2.5" fill="none"/>
+  <polygon points="318,350 324,362 330,351" fill="#61D2CE"/>
+
+  <!-- Left → Top (curved arc) -->
+  <path d="M 262 280 Q 310 180 456 163" stroke="#590DA0" stroke-width="2.5" fill="none"/>
+  <polygon points="451,158 461,168 463,156" fill="#590DA0"/>
+
+  <!-- Footer -->
+  <text x="600" y="608" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11" fill="#9A9AB0">odcus.com</text>
+</svg>
