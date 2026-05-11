@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F8F7FF" rx="12"/>
+
+  <!-- Title -->
+  <text x="600" y="54" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#1A1A2E">Drei Muster bei Tool-first-Einführungen</text>
+
+  <!-- === Card 1: Enthusiast === -->
+  <rect x="60" y="78" width="340" height="490" rx="12" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1.5"/>
+  <!-- Number badge -->
+  <circle cx="100" cy="118" r="22" fill="#590DA0"/>
+  <text x="100" y="125" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">1</text>
+  <!-- Icon: single person shape -->
+  <circle cx="230" cy="148" r="30" fill="#F0E8FF"/>
+  <circle cx="230" cy="138" r="10" fill="#590DA0"/>
+  <path d="M205 165 Q230 152 255 165 L255 168 Q230 156 205 168 Z" fill="#590DA0"/>
+  <!-- Title -->
+  <text x="230" y="210" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#590DA0">Einzelner Enthusiast</text>
+  <!-- Divider -->
+  <line x1="90" y1="224" x2="370" y2="224" stroke="#E0D9F5" stroke-width="1"/>
+  <!-- Description -->
+  <text x="230" y="252" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Eine Person nutzt das Tool</text>
+  <text x="230" y="272" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">intensiv, alle anderen kaum.</text>
+  <text x="230" y="306" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Der Wert hängt an dieser</text>
+  <text x="230" y="326" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Person, nicht am Prozess.</text>
+  <!-- Impact box -->
+  <rect x="86" y="358" width="288" height="60" rx="8" fill="#FFF4E5"/>
+  <text x="230" y="381" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#B85C00">Risiko: Beim nächsten</text>
+  <text x="230" y="399" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#B85C00">Jobwechsel ist das Wissen weg.</text>
+  <!-- Indicator bar -->
+  <rect x="86" y="446" width="288" height="8" rx="4" fill="#E0D9F5"/>
+  <rect x="86" y="446" width="80" height="8" rx="4" fill="#590DA0"/>
+  <text x="230" y="476" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11" fill="#9A9AB0">Skalierbarkeit: gering</text>
+
+  <!-- === Card 2: Parallel solutions === -->
+  <rect x="430" y="78" width="340" height="490" rx="12" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1.5"/>
+  <circle cx="470" cy="118" r="22" fill="#590DA0"/>
+  <text x="470" y="125" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">2</text>
+  <!-- Icon: overlapping boxes for parallel -->
+  <rect x="575" y="120" width="28" height="28" rx="4" fill="#8719E1" opacity="0.6"/>
+  <rect x="591" y="128" width="28" height="28" rx="4" fill="#590DA0" opacity="0.7"/>
+  <rect x="607" y="120" width="28" height="28" rx="4" fill="#8719E1" opacity="0.5"/>
+  <!-- Title -->
+  <text x="600" y="210" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#590DA0">Parallele Lösungen</text>
+  <line x1="460" y1="224" x2="740" y2="224" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="600" y="252" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Verschiedene Teams nutzen</text>
+  <text x="600" y="272" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">verschiedene Tools für ähnliche</text>
+  <text x="600" y="292" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Aufgaben — ohne Koordination.</text>
+  <text x="600" y="326" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Kein institutionelles Wissen</text>
+  <text x="600" y="346" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">entsteht.</text>
+  <rect x="456" y="358" width="288" height="60" rx="8" fill="#FFF4E5"/>
+  <text x="600" y="381" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#B85C00">Risiko: Was bei Team A</text>
+  <text x="600" y="399" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#B85C00">funktioniert, bleibt dort.</text>
+  <rect x="456" y="446" width="288" height="8" rx="4" fill="#E0D9F5"/>
+  <rect x="456" y="446" width="120" height="8" rx="4" fill="#590DA0"/>
+  <text x="600" y="476" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11" fill="#9A9AB0">Effizienz: mittel</text>
+
+  <!-- === Card 3: Data leakage === -->
+  <rect x="800" y="78" width="340" height="490" rx="12" fill="#FFFFFF" stroke="#E0D9F5" stroke-width="1.5"/>
+  <circle cx="840" cy="118" r="22" fill="#590DA0"/>
+  <text x="840" y="125" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">3</text>
+  <!-- Icon: lock with opening -->
+  <rect x="944" y="128" width="32" height="24" rx="4" fill="#590DA0"/>
+  <path d="M952 128 Q952 112 970 112 Q988 112 988 128" stroke="#590DA0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="970" cy="138" r="4" fill="#FFFFFF"/>
+  <!-- Arrow leaving lock -->
+  <line x1="990" y1="122" x2="1010" y2="108" stroke="#CC4444" stroke-width="2"/>
+  <polygon points="1004,104 1014,106 1008,116" fill="#CC4444"/>
+  <!-- Title -->
+  <text x="970" y="210" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#590DA0">Unkontrollierte Daten</text>
+  <line x1="830" y1="224" x2="1110" y2="224" stroke="#E0D9F5" stroke-width="1"/>
+  <text x="970" y="252" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Mitarbeitende kopieren</text>
+  <text x="970" y="272" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Kundendaten in öffentliche</text>
+  <text x="970" y="292" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">KI-Tools — ohne Richtlinie.</text>
+  <text x="970" y="326" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Das Unternehmen trägt das</text>
+  <text x="970" y="346" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="13" fill="#4A4A6A">Risiko, ohne es zu wissen.</text>
+  <rect x="826" y="358" width="288" height="60" rx="8" fill="#FFEEEE"/>
+  <text x="970" y="381" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#CC4444">Risiko: Datenschutzverletzung</text>
+  <text x="970" y="399" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="12" fill="#CC4444">rückwirkend schwer zu beheben.</text>
+  <rect x="826" y="446" width="288" height="8" rx="4" fill="#E0D9F5"/>
+  <rect x="826" y="446" width="220" height="8" rx="4" fill="#CC4444"/>
+  <text x="970" y="476" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11" fill="#9A9AB0">Risikopotenzial: hoch</text>
+
+  <text x="600" y="610" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11" fill="#9A9AB0">odcus.com</text>
+</svg>
