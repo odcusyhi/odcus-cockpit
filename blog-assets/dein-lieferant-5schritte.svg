@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <rect width="1200" height="520" fill="#FFFFFF" rx="12"/>
+
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#1A1A2E">Der 5-Schritte-Plan für Lieferanten-Sicherheit</text>
+
+  <!-- CARD 1: Inventar erstellen — purple border, white fill -->
+  <rect x="55" y="72" width="198" height="258" rx="14" fill="#FFFFFF" stroke="#590DA0" stroke-width="4"/>
+  <circle cx="154" cy="85" r="18" fill="#1A1A2E"/>
+  <text x="154" y="92" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+  <!-- Clipboard icon -->
+  <rect x="129" y="107" width="50" height="66" rx="4" fill="none" stroke="#590DA0" stroke-width="2.5"/>
+  <rect x="140" y="101" width="28" height="13" rx="4" fill="#590DA0"/>
+  <line x1="137" y1="133" x2="171" y2="133" stroke="#590DA0" stroke-width="2"/>
+  <line x1="137" y1="146" x2="171" y2="146" stroke="#590DA0" stroke-width="2"/>
+  <line x1="137" y1="159" x2="158" y2="159" stroke="#590DA0" stroke-width="2"/>
+  <text x="154" y="202" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Inventar</text>
+  <text x="154" y="220" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">erstellen</text>
+  <text x="154" y="246" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Alle Drittanbieter mit</text>
+  <text x="154" y="262" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Systemzugang erfassen</text>
+  <text x="154" y="278" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">und priorisieren.</text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="258" y1="201" x2="270" y2="201" stroke="#1A1A2E" stroke-width="3"/>
+  <polygon points="270,194 270,208 284,201" fill="#1A1A2E"/>
+
+  <!-- CARD 2: Vendor Risk Assessment — teal border, white fill -->
+  <rect x="278" y="72" width="198" height="258" rx="14" fill="#FFFFFF" stroke="#61D2CE" stroke-width="4"/>
+  <circle cx="377" cy="85" r="18" fill="#1A1A2E"/>
+  <text x="377" y="92" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+  <!-- Shield + checkmark -->
+  <path d="M377 107 L403 117 L403 140 Q403 157 377 169 Q351 157 351 140 L351 117 Z" fill="none" stroke="#61D2CE" stroke-width="2.5"/>
+  <polyline points="366,140 373,149 390,130" stroke="#61D2CE" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="377" y="202" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Vendor Risk</text>
+  <text x="377" y="220" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Assessment</text>
+  <text x="377" y="246" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Anbieter nach Security-</text>
+  <text x="377" y="262" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Reife, Verträgen und</text>
+  <text x="377" y="278" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Abhängigkeit bewerten.</text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="481" y1="201" x2="493" y2="201" stroke="#1A1A2E" stroke-width="3"/>
+  <polygon points="493,194 493,208 507,201" fill="#1A1A2E"/>
+
+  <!-- CARD 3: Vertragliche Absicherung — purple border, white fill -->
+  <rect x="501" y="72" width="198" height="258" rx="14" fill="#FFFFFF" stroke="#590DA0" stroke-width="4"/>
+  <circle cx="600" cy="85" r="18" fill="#1A1A2E"/>
+  <text x="600" y="92" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+  <!-- Document + seal -->
+  <rect x="576" y="106" width="48" height="63" rx="4" fill="none" stroke="#590DA0" stroke-width="2.5"/>
+  <path d="M590 106 L590 100 Q590 96 600 96 Q610 96 610 100 L610 106" fill="#590DA0"/>
+  <line x1="583" y1="127" x2="617" y2="127" stroke="#590DA0" stroke-width="1.5"/>
+  <line x1="583" y1="140" x2="617" y2="140" stroke="#590DA0" stroke-width="1.5"/>
+  <circle cx="600" cy="157" r="7" fill="none" stroke="#590DA0" stroke-width="2"/>
+  <line x1="596" y1="157" x2="604" y2="157" stroke="#590DA0" stroke-width="1.5"/>
+  <line x1="600" y1="153" x2="600" y2="161" stroke="#590DA0" stroke-width="1.5"/>
+  <text x="600" y="202" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Vertragliche</text>
+  <text x="600" y="220" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Absicherung</text>
+  <text x="600" y="246" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Audit-Rechte, SLAs und</text>
+  <text x="600" y="262" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Exit-Klauseln in</text>
+  <text x="600" y="278" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Verträgen verankern.</text>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="704" y1="201" x2="716" y2="201" stroke="#1A1A2E" stroke-width="3"/>
+  <polygon points="716,194 716,208 730,201" fill="#1A1A2E"/>
+
+  <!-- CARD 4: Monitoring aufbauen — teal border, white fill -->
+  <rect x="724" y="72" width="198" height="258" rx="14" fill="#FFFFFF" stroke="#61D2CE" stroke-width="4"/>
+  <circle cx="823" cy="85" r="18" fill="#1A1A2E"/>
+  <text x="823" y="92" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">4</text>
+  <!-- Radar/target -->
+  <circle cx="823" cy="140" r="30" fill="none" stroke="#61D2CE" stroke-width="2"/>
+  <circle cx="823" cy="140" r="20" fill="none" stroke="#61D2CE" stroke-width="2"/>
+  <circle cx="823" cy="140" r="10" fill="none" stroke="#61D2CE" stroke-width="2"/>
+  <circle cx="823" cy="140" r="3" fill="#61D2CE"/>
+  <!-- Warning triangle overlay -->
+  <polygon points="839,128 847,143 831,143" fill="none" stroke="#61D2CE" stroke-width="1.8"/>
+  <line x1="839" y1="132" x2="839" y2="137" stroke="#61D2CE" stroke-width="1.8"/>
+  <circle cx="839" cy="140" r="1.5" fill="#61D2CE"/>
+  <text x="823" y="202" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Monitoring</text>
+  <text x="823" y="220" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">aufbauen</text>
+  <text x="823" y="246" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Security-Ratings und</text>
+  <text x="823" y="262" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">CVE-Alerts für kritische</text>
+  <text x="823" y="278" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#4A4A6A">Lieferanten einrichten.</text>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="927" y1="201" x2="939" y2="201" stroke="#1A1A2E" stroke-width="3"/>
+  <polygon points="939,194 939,208 953,201" fill="#1A1A2E"/>
+
+  <!-- CARD 5: Incident Response planen — solid teal fill -->
+  <rect x="947" y="72" width="198" height="258" rx="14" fill="#61D2CE"/>
+  <circle cx="1046" cy="85" r="18" fill="#1A1A2E"/>
+  <text x="1046" y="92" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">5</text>
+  <!-- Alert/siren icon -->
+  <path d="M1046 108 Q1069 110 1071 133 L1021 133 Q1023 110 1046 108 Z" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+  <rect x="1034" y="133" width="24" height="10" rx="2" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+  <circle cx="1046" cy="151" r="6" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+  <path d="M1014 116 Q1009 110 1012 103" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M1078 116 Q1083 110 1080 103" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="1046" y="202" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Incident</text>
+  <text x="1046" y="220" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Response planen</text>
+  <text x="1046" y="246" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#1A5A5A">Szenario 'Lieferant</text>
+  <text x="1046" y="262" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#1A5A5A">kompromittiert' in</text>
+  <text x="1046" y="278" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11.5" fill="#1A5A5A">den IR-Plan aufnehmen.</text>
+
+  <!-- Handwritten annotation with arrow pointing to Card 1 -->
+  <path d="M 195 395 Q 160 375 130 358 Q 112 349 98 346" stroke="#590DA0" stroke-width="2" fill="none"/>
+  <polygon points="92,341 103,349 95,357" fill="#590DA0"/>
+  <text x="205" y="395" font-family="Georgia,'Times New Roman',serif" font-size="13.5" font-style="italic" fill="#590DA0">Hier starten - die meisten</text>
+  <text x="205" y="416" font-family="Georgia,'Times New Roman',serif" font-size="13.5" font-style="italic" fill="#590DA0">kennen ihre Lieferanten nicht</text>
+
+  <!-- Footer -->
+  <text x="600" y="506" text-anchor="middle" font-family="Inter,Arial,Helvetica,sans-serif" font-size="11" fill="#9A9AB0">odcus.com</text>
+</svg>
